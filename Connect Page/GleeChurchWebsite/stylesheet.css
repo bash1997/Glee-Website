@@ -1,0 +1,182 @@
+/* ---------------------------------------- */
+/* FONTS */
+/* ---------------------------------------- */
+
+@font-face {
+    font-family: 'Catamaran';
+    src: url('./Fonts/Catamaran/Catamaran-VariableFont_wght.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./Fonts/Lato/Lato-LightItalic.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('./Fonts/Lato/Lato-Light.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: Lato-light;
+    font-weight: 300;
+    font-size: 22px;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+}
+body{
+    width: 100%;
+}
+
+/* ---------------------------------------- */
+/* HEADINGS */
+/* ---------------------------------------- */
+
+h1 {
+    font-family: Catamaran;
+    font-weight: 900px;
+    font-size: 75px;
+}
+
+h2 {
+    font-family: Lato;
+    font-weight: 100px;
+    font-size: 50px;
+}
+
+/* ---------------------------------------- */
+/* HEADER */
+/* ---------------------------------------- */
+
+.header {
+    /*display: flex;
+    flex-direction: row; */
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.header li{
+    list-style-type: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(246, 87, 34);
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+}
+
+/* ---------------------------------------- */
+/* DIV BLOCKS */
+/* ---------------------------------------- */
+
+.orange-block {
+    background-color: #f65722;
+    padding: 100px;
+    color: white;
+    text-align: center;
+}
+
+.pic-block {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    color: white;
+    text-align: center;
+}
+
+.norm-block {
+    text-align: center;
+    padding: 100px;
+}
+
+/* ---------------------------------------- */
+/* BUTTONS */
+/* ---------------------------------------- */
+
+button {
+    background-color: rgb(246, 87, 34);
+    border: 0;
+    padding: 5px;
+    border-radius: 15%;
+}
+
+a.gleeBtn{
+    color:white;
+}
+a:hover.gleeBtn{
+    color: black;
+}
+
+/* ---------------------------------------- */
+/* SLIDING BOXES */
+/* ---------------------------------------- */
+
+.slidingBoxes{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid;
+    flex-flow: row wrap;
+}
+
+/* Personal Stylesheet Changes */
+
+#joinNow {
+    text-decoration: none;
+}
+
+.gleeBtn {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.flexitem{
+    border: 1px dotted;
+}
+
+/* Mobile Menu */
+.header #menuLinks{
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: row;
+    padding: 10px;*/
+    align-items: center;
+    justify-content: space-evenly; 
+    float: left;
+    flex-grow: 1;
+}
+
+.menuButton{
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+.testFlex{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;    
+}

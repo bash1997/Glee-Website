@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Page</title>
+    <link rel="stylesheet" href="../GleeChurchWebsite/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="connect.js"></script>
+</head>
+
+<body>
+    <div class="testFlex">
+        <a href=""><img src="../img/Capture.PNG" alt="Glee logo"></a>
+        <div class="header" id="menuLinks">
+            <a class="link" href="">About</a>
+            <a href="Connect.html">Connect</a>
+            <a href="">Sermons</a>
+            <a href="">Give</a>         
+        </div>
+        <div class="menuButton">
+            <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="orange-block">
+        <h2>Find Your Place at Glee</h2>
+    </div>
+    <div class="slidingBoxes">
+        <div class="norm-block flexitem">
+            <div id="tofeeds">See the Social Feed</div> 
+            <button onclick="showSocialFeed(document.getElementById('tofeeds'))">Show options</button>
+            <button onclick="hideSocialFeed(document.getElementById('tofeeds'))">Hide Options</button>
+        </div>
+        <div class="norm-block flexitem">
+            <div id="toCard">Fill Out Our Connection Card</div>
+            <button onclick="showConnectCard(document.getElementById('toCard'))">Open Connection Card</button>
+            <button onclick="hideConnectCard(document.getElementById('toCard'))">Close Connection Card</button>
+        </div>
+
+    
+    <!--
+            Placeholder
+    
+        </details>
+            <summary>Connection Card</summary>
+            <div>
+            
+            </div>
+        </details>
+        <details>
+            <summary>Social Feed</summary>
+            <div>
+                Common
+                Prayer Requests
+                Bible Study
+            </div>
+        </details>
+    
+    -->
+    </div>
+    <div class="orange-block">
+        <h2>Serve at Glee</h2>
+    </div>
+    <div>
+        <h4 class="norm-block flexitem">Volunteer</h2>
+        <div class="slidingBoxes">
+            <div class="norm-block flexitem">Testamonials</div>
+            <div class="norm-block flexitem">
+                <button>
+                    <a class="gleeBtn" href="">Join Now!</a>
+                </button>
+            </div>
+            <div class="norm-block flexitem">List of Roles</div>
+        </div>
+    </div>
+    <div>
+        <h4 class="norm-block">Internship</h2>
+        <div class="slidingBoxes">
+            <div class="norm-block flexitem">Testamonials</div>
+            <div class="norm-block flexitem">
+                <button class="gleeBtn">
+                    <a class="gleeBtn" href="">Join Now!</a>
+                </button>
+            </div>
+            <div class="norm-block flexitem">List of Roles</div>
+        </div>
+    </div>
+    
+</body>
+</html>

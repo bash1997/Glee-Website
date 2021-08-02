@@ -12,15 +12,11 @@ var friendlinessButton = document.getElementById("friendliness");
 // Display
 var valueDisplay = document.getElementById("display");
 
-// Images
-var partnershipsImage = document.createElement("img");
-partnershipsImage.src = "./Img/test.jpg";
-
 // ---------------------------------------- //
 // FUNCTIONS
 // ---------------------------------------- //
 partnershipsButton.onclick = function() {
-    // Place code here
+    console.log("Partnerships");
 };
 
 creativityButton.onclick = function() {

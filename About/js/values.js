@@ -15,22 +15,24 @@ var valueDisplay = document.getElementById("display");
 // ---------------------------------------- //
 // FUNCTIONS
 // ---------------------------------------- //
-partnershipsButton.onclick = function() {
-    console.log("Partnerships");
-};
 
-creativityButton.onclick = function() {
-    // Place code here
-};
+function partnershipsClick() {
+   console.log("partnership button works");
+   //valueDisplay.style.opacity = 0;
+}
 
-generosityButton.onclick = function() {
-    // Place code here
-};
+function creativityClick() {
+    console.log("creativity button works");
+}
 
-excellenceButton.onclick = function() {
-    // Place code here
-};
+function generosityClick() {
+    console.log("generosity button works");
+}
 
-friendlinessButton.onclick = function() {
-    // Place code here
-};
+function excellenceClick() {
+    console.log("excellence button works");
+}
+
+function friendlinessClick() {
+    console.log("friendliness button works");
+}

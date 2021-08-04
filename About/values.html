@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Values</title>
     <link href="./css/stylesheet.css" rel="stylesheet">
-    <script src="./js/values.js" defer></script>
 </head>
 <body>
     <!-- Main Header -->
@@ -27,7 +26,7 @@
     </header>
     
     <!-- Value Goes Here -->
-    <div class="bullet-display">
+    <div class="bullet-display" id="display">
         <figure id="image">
             <img src="./Img/misc/test.jpg" id="mainImg">
         </figure>
@@ -35,11 +34,20 @@
 
     <!-- Select Church Value Here -->
     <div class="bullet-select">
-        <li> <button id="partnerships">Partnerships</button> </li>
-        <li> <button id="creativity">​Creativity</button> </li>
-        <li> <button id="generosity">Generosity</button> </li>
-        <li> <button id="excellence">Excellence</button> </li>
-        <li> <button id="friendliness">​Friendliness</button> </li>
+        <button id="partnerships" onclick="partnershipsClick()">Partnerships</button>
+        <button id="creativity" onclick="creativityClick()">​Creativity</button>
+        <button id="generosity" onclick="generosityClick()">Generosity</button>
+        <button id="excellence" onclick="excellenceClick()">Excellence</button>
+        <button id="friendliness" onclick="friendlinessClick()">​Friendliness</button>
     </div>
+
+    <!-- <script>
+        function partnershipsClick() {
+            document.getElementById("creativity").innerHTML = "working";
+        }
+
+    </script> -->
+    <script src="./js/values.js" defer></script>
 </body>
+
 </html>

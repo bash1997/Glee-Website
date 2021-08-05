@@ -9,8 +9,10 @@ var generosityButton = document.getElementById("generosity");
 var excellenceButton = document.getElementById("excellence");
 var friendlinessButton = document.getElementById("friendliness");
 
-// Display
-var valueDisplay = document.getElementById("display");
+// Display Properties
+var selectedImg = document.getElementById("main-img");
+var selectedValue = document.getElementById("selected-value");
+var valueInfo = document.getElementById("value-info");
 
 // ---------------------------------------- //
 // FUNCTIONS
@@ -18,11 +20,16 @@ var valueDisplay = document.getElementById("display");
 
 function partnershipsClick() {
    console.log("partnership button works");
-   //valueDisplay.style.opacity = 0;
+   selectedImg.src = "./Img/values/partnerships.jpg";
+   selectedValue.innerText = "Partnerships";
+   valueInfo.innerText = "Glee Church values its many partnerships with the community."
 }
 
 function creativityClick() {
     console.log("creativity button works");
+    selectedImg.src = "./Img/values/creativity.jpg";
+    selectedValue.innerText = "Creativity";
+    valueInfo.innerText = "We at Glee Church strive to be imaginative in all we do."
 }
 
 function generosityClick() {

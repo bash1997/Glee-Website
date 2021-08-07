@@ -14,32 +14,57 @@ var selectedImg = document.getElementById("main-img");
 var selectedValue = document.getElementById("selected-value");
 var valueInfo = document.getElementById("value-info");
 
+// Image Sources
+const ImgPartnerships = "./Img/values/partnerships.jpg";
+const ImgCreativity = "./Img/values/creativity.jpg";
+const ImgGenerosity = "./Img/values/generosity.jpg";
+const ImgExcellence = "./Img/values/excellence.jpg";
+const ImgFriendliness = "./Img/values/friendliness.jpg";
+
+// Value Titles
+const TitlePartnerships = "Partnerships";
+const TitleCreativity = "Creativity";
+const TitleGenerosity = "Generosity";
+const TitleExcellence = "Excellence";
+const TitleFriendliness = "Friendliness";
+
+// Value Info
+const InfoPartnerships = "Glee Church values its many partnerships with the community.";
+const InfoCreativity = "We at Glee Church strive to be imaginative in all we do.";
+const InfoGenerosity = "3";
+const InfoExcellence = "4";
+const InfoFriendliness = "5";
+
 // ---------------------------------------- //
-// FUNCTIONS
+// BUTTON FUNCTIONS
 // ---------------------------------------- //
 
-function partnershipsClick() {
-   console.log("partnership button works");
-   selectedImg.src = "./Img/values/partnerships.jpg";
-   selectedValue.innerText = "Partnerships";
-   valueInfo.innerText = "Glee Church values its many partnerships with the community."
-}
+// Partnerships
+// -----------------
+function partnershipsClick() {swap(ImgPartnerships, TitlePartnerships, InfoPartnerships);}
 
-function creativityClick() {
-    console.log("creativity button works");
-    selectedImg.src = "./Img/values/creativity.jpg";
-    selectedValue.innerText = "Creativity";
-    valueInfo.innerText = "We at Glee Church strive to be imaginative in all we do."
-}
+// Creativity
+// -----------------
+function creativityClick() {swap(ImgCreativity, TitleCreativity, InfoCreativity);}
 
-function generosityClick() {
-    console.log("generosity button works");
-}
+// Generosity
+// -----------------
+function generosityClick() {swap(ImgGenerosity, TitleGenerosity, InfoGenerosity);}
 
-function excellenceClick() {
-    console.log("excellence button works");
-}
+// Excellence
+// -----------------
+function excellenceClick() {swap(ImgExcellence, TitleExcellence, InfoExcellence);}
 
-function friendlinessClick() {
-    console.log("friendliness button works");
+// Friendliness
+// -----------------
+function friendlinessClick() {swap(ImgFriendliness, TitleFriendliness, InfoFriendliness);}
+
+// ---------------------------------------- //
+// HELPER FUNCTIONS
+// ---------------------------------------- //
+
+function swap(imgSrc,value,info) {
+   selectedImg.src = imgSrc;
+   selectedValue.innerText = value;
+   valueInfo.innerText = info;
 }

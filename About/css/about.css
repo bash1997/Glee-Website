@@ -1,3 +1,54 @@
 .bullet-display {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Img/values/partnerships.jpg');
 }
+
+.pick-block {
+    @media (max-width: 300px) {
+        width: 25%;
+    }
+}
+
+.slidingBoxes {
+    flex-flow: row wrap;
+}
+
+.slidingBoxes {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+}
+
+.about-select {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.about-select img{
+    width: 250px;
+    height: 250px;
+}
+
+/* Tablet Screen */
+@media only screen and (min-width: 600px){
+    .about-select {
+        width: 50%;
+    }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 900px){
+    .about-select {
+        width: 33%;
+    }
+
+    .about-select button {
+        width: 33%;
+        font-size: 18px;
+    }
+}

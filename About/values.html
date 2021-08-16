@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <link href="../css/stylesheet.css" rel="stylesheet">
     <link href="./css/about.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Main Header -->
     <header>
         <!-- Navbar -->
         <nav>
-            <li> <a href="#"> Home </a> </li>   
+            <li> <a href="#"> Home </a> </li>
             <li> <a href="#"> About </a> </li>
             <li> <a href="#"> Connection Card </a> </li>
             <li> <a href="#"> Sermons </a> </li>
@@ -25,23 +27,24 @@
             <h2>We at Glee Church take our morals and ethics seriously.</h2> <br>
         </div>
     </header>
-    
+
     <!-- Value Goes Here -->
-    <div class="bullet-display" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Img/values/partnerships.jpg');">
+    <div class="bullet-display" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)), url('./Img/values/partnerships.jpg');">
         <figure>
             <h1 id="selected-value">Partnerships</h2>
-            <h2 id="value-info">Glee Church values its many partnerships with the community.</h2>
-            <img src="./Img/values/partnerships.jpg" id="main-img" width="300" height="300">
+                <h2 id="value-info">Glee Church values its many partnerships with the community.</h2>
+                <img src="./Img/values/partnerships.jpg" id="main-img" width="300" height="300">
         </figure>
     </div>
 
     <!-- Select Church Value Here -->
     <div class="bullet-select">
-        <button id="partnerships" onclick="partnershipsClick()">Partnerships</button>
-        <button id="creativity" onclick="creativityClick()">​Creativity</button>
-        <button id="generosity" onclick="generosityClick()">Generosity</button>
-        <button id="excellence" onclick="excellenceClick()">Excellence</button>
-        <button id="friendliness" onclick="friendlinessClick()">​Friendliness</button>
+        <button class="button-orange" id="partnerships" onclick="partnershipsClick()">Partnerships</button>
+        <button class="button-orange" id="creativity" onclick="creativityClick()">​Creativity</button>
+        <button class="button-orange" id="generosity" onclick="generosityClick()">Generosity</button>
+        <button class="button-orange" id="excellence" onclick="excellenceClick()">Excellence</button>
+        <button class="button-orange" id="friendliness" onclick="friendlinessClick()">​Friendliness</button>
     </div>
     <script src="./js/values.js" defer></script>
 </body>

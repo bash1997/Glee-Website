@@ -1,3 +1,32 @@
+/* ---------------------------------------- */
+/* FONTS */
+/* ---------------------------------------- */
+
+@font-face {
+    font-family: 'Catamaran';
+    src: url('../Fonts/Catamaran/Catamaran-VariableFont_wght.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../Fonts/Lato/Lato-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../Fonts/Lato/Lato-Light.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* ---------------------------------------- */
+/* HEADER AND NAVBAR */
+/* ---------------------------------------- */
+
 .bullet-display {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Img/values/partnerships.jpg');
 }
@@ -7,6 +36,10 @@
         width: 25%;
     }
 }
+
+/* ---------------------------------------- */
+/* SLIDING BOXES */
+/* ---------------------------------------- */
 
 .slidingBoxes {
     flex-flow: row wrap;
@@ -19,6 +52,10 @@
     flex-flow: row wrap;
 }
 
+/* ---------------------------------------- */
+/* PAGE SELECTION OPTIONS */
+/* ---------------------------------------- */
+
 .about-select {
     text-align: center;
     width: 100%;
@@ -27,12 +64,44 @@
     align-items: center;
     flex-flow: column wrap;
     text-align: center;
+    padding-bottom: 100px;
+}
+
+.about-select a {
+    text-decoration: none;
+}
+
+.about-select button {
+    width: 185px;
+    height: 75px;
+    font-family: Lato-light;
 }
 
 .about-select img{
     width: 250px;
     height: 250px;
 }
+
+.bullet-select {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.bullet-select button {
+    width: 185px;
+    height: 75px;
+    font-family: Lato-light;
+}
+
+/* ---------------------------------------- */
+/* MEDIA QUERIES */
+/* ---------------------------------------- */
 
 /* Tablet Screen */
 @media only screen and (min-width: 600px){
@@ -47,7 +116,7 @@
         width: 33%;
     }
 
-    .about-select button {
+    .about-select a {
         width: 33%;
         font-size: 18px;
     }

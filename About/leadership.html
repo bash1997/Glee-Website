@@ -7,25 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leadership</title>
     <link href="../css/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- Main Header -->
-    <header>
+    <!-- <header> -->
         <!-- Navbar -->
-        <nav>
+        <!-- <nav>
             <li> <a href="#"> Home </a> </li>
             <li> <a href="#"> About </a> </li>
             <li> <a href="#"> Connection Card </a> </li>
             <li> <a href="#"> Sermons </a> </li>
-        </nav>
+        </nav> -->
+
+        <!-- Navbar -->
+        <div class="testFlex">
+            <!-- Logo -->
+            <a id="gleeLogo" href=""><img src="./Img/icons/logo.png" alt="Glee logo"></a>
+            
+            <!-- Mobile/Tablet Menu Button -->
+            <div class="menuButton">
+                <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            
+            <!-- Links -->
+            <div class="header" id="menuLinks">
+                <a class="link" href="../About/about.html">About</a>
+                <a class="link" href="../Connect Page/Code/Connect.html">Connect</a>
+                <a href="">Sermons</a>
+                <a href="">Give</a>         
+            </div>
+        </div>
 
         <!-- Opening -->
         <div class="orange-block">
             <h1>Leadership</h1>
             <h2>We at GleeChurch take our morals and ethics seriously.</h2> <br>
         </div>
-    </header>
+    <!-- </header> -->
 
     <!-- List of all leaders -->
     <div class="leaders-list">
@@ -39,6 +61,7 @@
             <a>leader7</a>
         </div>
     </div>
+    <script src="./js/header.js" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,200 @@
+html,
+body,
+main,
+section,
+div {
+    width: 100%;
+    text-align: center;
+}
+
+html {
+    font: 16px;
+}
+
+/* MAIN */
+section {
+    /* border: 1px solid blue; */
+    margin-bottom: 2rem;
+}
+
+#lastest {
+    width: 1000%;
+    margin-top: 1rem;
+}
+
+.lastest-message {
+    margin: .75rem 0 0;
+}
+
+.lastest-message h6 {
+    font-size: 2.125em;
+}
+
+#message-info h5 {
+    margin: .75rem 0;
+}
+
+/* .lastest-message.flex,
+#message-info.flex {
+    justify-content: start;
+    /* text-align: left; 
+} */
+
+#service-info div {
+    margin: 1.25rem 0 0;
+}
+
+#service-info h6,
+#service-info address,
+#service-info p {
+    font-size: 1.25rem;
+}
+
+#banner {
+    background: rgb(246, 87, 34);
+    color: #fff;
+}
+
+.directions {
+    width: 100%;
+}
+
+.directions iframe {
+    width: 100%;
+    height: 70vw;
+    margin: 2em 0;
+}
+
+.app-graphic {
+    background: url("../img/mobile-app.png") no-repeat center;
+    background-size: 100% auto;
+    min-height: 330px;
+}
+
+#sermon {
+    /* box-shadow: inset 0 0 20px 0 rgb(246, 87, 34); */
+    padding: 2rem 1.25rem;
+}
+
+#sermon h3 {
+    text-transform: uppercase;
+    color: rgb(246, 87, 34);
+}
+
+.sermon-video {
+    margin-top: 2rem;
+}
+
+#popular video {
+    box-shadow: 0 0 20px 0 rgb(246, 87, 34);
+}
+
+#cards {
+    margin-bottom: 2rem;
+}
+
+.connection img {
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.card-info {
+    padding: 1rem 0;
+}
+
+.card-info h3 {
+    color: rgb(246, 87, 34);
+    text-transform: uppercase;
+    margin: .5rem 0;
+}
+
+.card-info p {
+    margin: .5rem .75rem 1rem;
+}
+
+#newHere .card-info p:first-of-type {
+    margin-bottom: .25rem;
+}
+
+#newHere .card-info p:last-of-type {
+    margin-top: .25rem;
+}
+
+.video-info.flex {
+    justify-content: space-between;
+}
+
+.video-info h5 {
+    width: 100%;
+}
+
+.video-info h6 {
+    width: auto;
+}
+
+#promo-video.flex {
+    align-items: center;
+    position: relative;
+}
+
+#promo {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.promo-title {
+    position: absolute;
+}
+
+/* #bottom-contact {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 10px 0;
+}
+
+#bottom-contact .fab,
+#bottom-contact .fas {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 70px;
+}
+
+#bottom-contact span {
+    font-size: .818rem;
+    font-weight: 400;
+} */
+
+#events {}
+
+@media screen and (min-width: 600px) {
+    #service-info,
+    #app-graphic {
+        width: 50%;
+        /* align-content: flex-end; */
+    }
+
+    .directions iframe {
+        height: 35vw;
+        width: 90%;
+        margin-top: 1em;
+    }
+
+    .app-graphic {
+        min-height: 300px;
+    }
+
+    #app-graphic a {
+        /* position: absolute;
+        bottom: -100px;
+        right: 10%;
+        width: 30%; */
+    }
+}

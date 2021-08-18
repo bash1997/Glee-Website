@@ -1,0 +1,32 @@
+video {
+  width: 100%;
+  height: auto;
+}
+
+.feat-video {
+  width: 100%;
+}
+
+.feat-video.flex {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.feat-video video {
+  position: relative;
+}
+
+.feat-video .video-info {
+  position: absolute;
+  color: white;
+  padding: 0 0 10px 10px;
+}
+
+.sermon-video {
+  width: 90%;
+  height: auto;
+  margin-bottom: 100px;
+  /* border: blue 1px solid; */
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 0 20px 5px;
+}

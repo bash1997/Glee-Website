@@ -80,7 +80,7 @@ h5 {
 h6,
 a,
 address,
-button {
+button, button a {
     font-family: 'Catamaran';
     font-size: 1.125rem; 
 }
@@ -134,7 +134,7 @@ i {
 }
 
 #menuLinks{
-    display: none;
+    display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
@@ -147,28 +147,35 @@ i {
     justify-content: center;
     align-items: center;
     min-width: 48px;
-    min-height: 48px;    
+    min-height: 48px; 
+    width: 33%;   
 }
 
 .testFlex{
     padding: 10px;
     display: flex;
     flex-direction: row;
-    flex-flow: column;
-    justify-content: center;
+    justify-content: space-around;
     position: sticky;
-    background-color: rgba(81, 76, 82, .75);
+    background-color: rgb(255, 255, 255);
     top: 0;
     width: 100%;
     z-index: 1000;
-    display: none;
+    flex-wrap: wrap;
+    /* display: none; */
 }
 
-#gleeLogo {
+a#gleeLogo {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 33%;
+    height: auto;
+}
 
+#gleeLogo img {
+    width: 100%;
+    height: auto;
 }
 
 #bottom-contact {
@@ -325,7 +332,7 @@ button {
     border: none;
 }
 
-.button-orange {
+.button-orange, button a{
     background: rgb(246, 87, 34);
     color: #fff;
 }
@@ -377,6 +384,19 @@ main {
 }
 
 @media only screen and (min-width: 600px) {
+    a#gleeLogo {
+        width: 20%;
+    }
+
+    .testFlex {
+        justify-content: center;
+    }
+
+    .menuButton {
+        width: 5%;
+        padding-left: 25px;
+    }
+    
     /* footer */
     #bottom-contact {
         display: none;
@@ -413,5 +433,17 @@ main {
 @media only screen and (min-width: 800px) {
     html {
         font-size: 18px;
+    }
+
+    a#gleeLogo {
+        width: 8%;
+    }
+
+    .menuButton {
+        display: none;
+    }
+
+    #menuLinks {
+        width: 80%;
     }
 }

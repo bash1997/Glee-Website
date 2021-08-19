@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Page</title>
+    <link rel="stylesheet" href="../GleeChurchWebsite/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="testFlex">
+        <div id="logo"><a id="gleeLogo" href="../,,/index.html"><img id="headerLogo" src="../img/Capture.PNG" alt="Glee logo"></a></div>
+        
+        <div class="header" id="menuLinks">
+            <a class="link" href="../../About/about.html">About</a>
+            <a href="Connect.html">Connect</a>
+            <a href="../../sermon/sermon.html">Sermons</a>
+            <a href="">Give</a>      
+        </div>
+        <div class="menuButton" id="menu">
+            <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+        <div class="orange-block">
+            <h1>Find Your Place at Glee</h1>
+        </div>
+        <div class="slidingBoxes">
+            <div class="norm-block flexitem"><!--Figure out how to link a seperate react page instead of inline like this-->
+                <div id="tofeeds"></div>
+
+
+                <script type="text/babel">
+                
+                
+
+                    function FeedsList(){
+                        return 
+                        <div>
+                            <button>Common</button>
+                            <br></br>
+                            <button>Prayer Request</button>
+                            <br></br>
+                            <button>Bible Study</button>
+                            <br></br>
+                            <button>Show Feeds</button><button>Hide Feeds</button>
+                        </div>
+                    }
+
+                    function originalMessage(){
+                        return (
+                            <div>
+                                See the Social Feeds
+                                <br></br>
+                                <button>Show Feeds</button><button>Hide Feeds</button>
+                            </div>
+                            );
+                    }
+
+                    function display(props){
+                        const displayStage = props.stage;
+                        if(stage == 0){
+                            return <originalMessage />;
+                        }else if (stage == 1){
+                            return <FeedsList />;
+                        }
+                    }
+
+                    class SeeFeeds extends React.Component {
+                      render() {
+                        return originalMessage();
+                      }
+                    }
+         
+                    //ReactDOM.render(<SeeFeeds />, document.getElementById('tofeeds'))
+                    
+class LoginControl extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleLoginClick = this.handleLoginClick.bind(this);
+    this.handleLogoutClick = this.handleLogoutClick.bind(this);
+    this.handleCommonClick = this.handleCommonClick.bind(this);
+    this.state = {isLoggedIn: 0};
+  }
+
+  //Makes button work
+
+  //anywhere => list of feeds
+  handleLoginClick() {
+    this.setState({isLoggedIn: 1});
+  }
+
+  //anywhere => start
+  handleLogoutClick() {
+    this.setState({isLoggedIn: 0});
+  }
+
+  //list of feeds => commonfeed
+  handleCommonClick(){
+    this.setState({isLoggedIn: 2});
+  }
+
+  render() {
+    const isLoggedIn = this.state.isLoggedIn;
+
+    //creates the component
+    return (
+      <div >
+        <Greeting isLoggedIn={isLoggedIn} />
+        <LoginButton onClick={this.handleLoginClick} />
+        <LogoutButton onClick={this.handleLogoutClick} />
+      </div>
+    );
+  }
+}
+
+//Content of Component
+
+//shows list of feeds
+function UserGreeting(props) {
+  return <div>
+    <CommonFeed onClick = {LoginControl.handleCommonClick} />
+    </div>;
+}
+
+//original content
+function GuestGreeting(props) {
+  return <div>See the Social Feed!</div>;
+}
+
+//shows commonfeed
+function SeeCommonFeed(props){
+    return <div>Common Feed</div>;
+}
+
+
+//Rotates Content of Component on button clicks
+
+function Greeting(props) {
+    console.log(props)
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn == 0) {
+    return <GuestGreeting />;
+  }else if(isLoggedIn == 1){
+    return <UserGreeting />;
+  }else if(isLoggedIn == 2){
+    return <SeeCommonFeed />;
+  }
+  
+}
+
+//React Buttons
+
+//show social feed list
+function LoginButton(props) {
+  return (
+    <button onClick={props.onClick}>
+      Open Social Feeds
+    </button>
+  );
+}
+
+//Reverts Component to begining
+function LogoutButton(props) {
+  return (
+    <button onClick={props.onClick}>
+      Hide Social Feeds
+    </button>
+  );
+}
+
+//Shows the common feed
+function CommonFeed(props){
+    return(
+        <button onClick={props.onClick} >
+            Common Feed
+        </button>
+    );
+}
+
+ReactDOM.render(
+  <LoginControl />,
+  document.getElementById('tofeeds')
+);
+
+
+                  </script>
+
+                
+                <!--
+                <button onclick="showSocialFeed(document.getElementById('tofeeds'))">Show options</button>
+                <button onclick="hideSocialFeed(document.getElementById('tofeeds'))">Hide Options</button>
+                -->
+            </div>
+            <div class="norm-block flexitem">
+                <div id="toCard">Fill Out Our Connection Card</div>
+                <button onclick="showConnectCard(document.getElementById('toCard'))">Open Connection Card</button>
+                <button onclick="hideConnectCard(document.getElementById('toCard'))">Close Connection Card</button>
+            </div>
+
+        
+        <!--
+                Placeholder
+        
+            </details>
+                <summary>Connection Card</summary>
+                <div>
+                
+                </div>
+            </details>
+            <details>
+                <summary>Social Feed</summary>
+                <div>
+                    Common
+                    Prayer Requests
+                    Bible Study
+                </div>
+            </details>
+        
+        -->
+        </div>
+        <div class="orange-block">
+            <h1>Serve at Glee</h1>
+        </div>
+        <div>
+            <h2 class="norm-block title" style="background-image: url(../img/Volunteer.jpg);">Volunteer</h2>
+
+
+            <div class="norm-block flexitem test" id="VolTest">Testamonials</div>
+            <div class="slidingBoxes">
+                <div class="norm-block flexitem" id="VolButton">
+                    <button>
+                        <a class="gleeBtn" href="">Join Now!</a>
+                    </button>
+                </div>
+                <div class="norm-block flexitem" id="VolRoles">List of Roles</div>
+            </div>
+        </div>
+        <div>
+            <h2 class="norm-block title" style="background-image: url(../img/Intern.jpg);">Internship</h2>
+            
+
+            <div class="norm-block flexitem test" id="InternTest">Testamonials</div>
+            <div class="slidingBoxes">
+                <div class="norm-block flexitem test" id="InternButton">
+                    <button class="gleeBtn">
+                        <a class="gleeBtn" href="">Join Now!</a>
+                    </button>
+                </div>
+                <div class="norm-block flexitem test" id="InternRoles">List of Roles</div>
+            </div>
+        </div>
+      <div class="norm-block">Footer</div>
+      <script src="connect.js"></script>
+  </body>
+
+</html>

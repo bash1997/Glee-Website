@@ -10,7 +10,7 @@ var excellenceButton = document.getElementById("excellence");
 var friendlinessButton = document.getElementById("friendliness");
 
 // Display Properties
-var selectedImg = document.getElementById("main-img");
+var selectedImg = document.getElementById("bullet-display");
 var selectedValue = document.getElementById("selected-value");
 var valueInfo = document.getElementById("value-info");
 
@@ -31,9 +31,9 @@ const TitleFriendliness = "Friendliness";
 // Value Info
 const InfoPartnerships = "Glee Church values its many partnerships with the community.";
 const InfoCreativity = "We at Glee Church strive to be imaginative in all we do.";
-const InfoGenerosity = "3";
-const InfoExcellence = "4";
-const InfoFriendliness = "5";
+const InfoGenerosity = "Giving back to our community is what Glee Church strives to achieve.";
+const InfoExcellence = "We at Glee Church seek to be the best version of ourselves.";
+const InfoFriendliness = "Friendship is what makes the Glee Church Community.";
 
 // ---------------------------------------- //
 // BUTTON FUNCTIONS
@@ -41,30 +41,30 @@ const InfoFriendliness = "5";
 
 // Partnerships
 // -----------------
-function partnershipsClick() {swap(ImgPartnerships, TitlePartnerships, InfoPartnerships);}
+function partnershipsClick() { swap(ImgPartnerships, TitlePartnerships, InfoPartnerships); }
 
 // Creativity
 // -----------------
-function creativityClick() {swap(ImgCreativity, TitleCreativity, InfoCreativity);}
+function creativityClick() { swap(ImgCreativity, TitleCreativity, InfoCreativity); }
 
 // Generosity
 // -----------------
-function generosityClick() {swap(ImgGenerosity, TitleGenerosity, InfoGenerosity);}
+function generosityClick() { swap(ImgGenerosity, TitleGenerosity, InfoGenerosity); }
 
 // Excellence
 // -----------------
-function excellenceClick() {swap(ImgExcellence, TitleExcellence, InfoExcellence);}
+function excellenceClick() { swap(ImgExcellence, TitleExcellence, InfoExcellence); }
 
 // Friendliness
 // -----------------
-function friendlinessClick() {swap(ImgFriendliness, TitleFriendliness, InfoFriendliness);}
+function friendlinessClick() { swap(ImgFriendliness, TitleFriendliness, InfoFriendliness); }
 
 // ---------------------------------------- //
 // HELPER FUNCTIONS
 // ---------------------------------------- //
 
-function swap(imgSrc,value,info) {
-   selectedImg.src = imgSrc;
+function swap(imgSrc, value, info) {
+   selectedImg.style.backgroundImage = linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); // <------ Fix Error Here
    selectedValue.innerText = value;
    valueInfo.innerText = info;
 }

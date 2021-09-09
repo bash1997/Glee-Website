@@ -28,7 +28,13 @@
 /* ---------------------------------------- */
 
 .bullet-display {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Img/values/partnerships.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 200px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Img/values/partnerships.jpg);
 }
 
 .pick-block {
@@ -67,16 +73,14 @@
     padding-bottom: 100px;
 }
 
-.about-select button a {
+.about-select a {
     text-decoration: none;
-    width: 100%;
-    height: 100%;
 }
 
 .about-select button {
     width: 185px;
     height: 75px;
-    /* font-family: Lato-light; */
+    font-family: Lato-light;
 }
 
 .about-select img{

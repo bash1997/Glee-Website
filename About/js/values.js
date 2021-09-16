@@ -1,76 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+// ---------------------------------------- //
+// VARIABLES
+// ---------------------------------------- //
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Values</title>
-    <link href="../css/stylesheet.css" rel="stylesheet">
-    <link href="./css/about.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+// Buttons
+var partnershipsButton = document.getElementById("partnerships");
+var creativityButton = document.getElementById("creativity");
+var generosityButton = document.getElementById("generosity");
+var excellenceButton = document.getElementById("excellence");
+var friendlinessButton = document.getElementById("friendliness");
 
-<body>
-    <!-- Main Header
-    <header> -->
-    <!-- Navbar -->
-    <!-- <nav>
-            <li> <a href="#"> Home </a> </li>
-            <li> <a href="#"> About </a> </li>
-            <li> <a href="#"> Connection Card </a> </li>
-            <li> <a href="#"> Sermons </a> </li>
-        </nav> -->
+// Display Properties
+var selectedImg = document.getElementById("display");
+var selectedValue = document.getElementById("selected-value");
+var valueInfo = document.getElementById("value-info");
 
-    <!-- Navbar -->
-    <div class="testFlex">
-        <!-- Logo -->
-        <a id="gleeLogo" href="../index.html"><img src="./Img/icons/logo.png" alt="Glee logo"></a>
+// Image Sources
+const ImgPartnerships = "./Img/values/partnerships.jpg";
+const ImgCreativity = "./Img/values/creativity.jpg";
+const ImgGenerosity = "./Img/values/generosity.jpg";
+const ImgExcellence = "./Img/values/excellence.jpg";
+const ImgFriendliness = "./Img/values/friendliness.jpg";
 
-        <!-- Mobile/Tablet Menu Button -->
-        <div class="menuButton">
-            <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+// Value Titles
+const TitlePartnerships = "Partnerships";
+const TitleCreativity = "Creativity";
+const TitleGenerosity = "Generosity";
+const TitleExcellence = "Excellence";
+const TitleFriendliness = "Friendliness";
 
-        <!-- Links -->
-        <div class="header" id="menuLinks">
-            <a class="link" href="../About/about.html">About</a>
-            <a class="link" href="../Connect Page/Code/Connect.html">Connect</a>
-            <a href="">Sermons</a>
-            <a href="">Give</a>
-        </div>
-    </div>
+// Value Info
+const InfoPartnerships = "Glee Church values its many partnerships with the community.";
+const InfoCreativity = "We at Glee Church strive to be imaginative in all we do.";
+const InfoGenerosity = "Giving back to our community is what Glee Church strives to achieve.";
+const InfoExcellence = "We at Glee Church seek to be the best version of ourselves.";
+const InfoFriendliness = "Friendship is what makes the Glee Church Community.";
 
-    <!-- Opening -->
-    <div class="orange-block">
-        <h1>Our Values</h1>
-        <h2>We at Glee Church take our morals and ethics seriously.</h2> <br>
-    </div>
-    <!-- </header> -->
+// ---------------------------------------- //
+// BUTTON FUNCTIONS
+// ---------------------------------------- //
 
-    <!-- Value Goes Here -->
-    <div class="value-display">
-        <h1 id="selected-value">Partnerships</h1>
-        <h2 id="value-info">Glee Church values its many partnerships with the community.</h2>
-        <!-- <img src="./Img/values/partnerships.jpg" id="main-img" width="300" height="300"> -->
-    </div>
-    
-    <!-- Select Church Value Here -->
-    <div class="bullet-select">
-        <div class="slidingBoxes">
-            <button class="button-orange" id="partnerships" onclick="partnershipsClick()">Partnerships</button>
-            <button class="button-orange" id="creativity" onclick="creativityClick()">​Creativity</button>
-            <button class="button-orange" id="generosity" onclick="generosityClick()">Generosity</button>
-            <button class="button-orange" id="excellence" onclick="excellenceClick()">Excellence</button>
-            <button class="button-orange" id="friendliness" onclick="friendlinessClick()">​Friendliness</button>
-        </div>
-    </div>
-    <script src="./js/values.js" defer></script>
-    <script src="./js/header.js" defer></script>
-</body>
+// Partnerships
+// -----------------
+function partnershipsClick() { swap(ImgPartnerships, TitlePartnerships, InfoPartnerships); }
 
-</html>
+// Creativity
+// -----------------
+function creativityClick() { swap(ImgCreativity, TitleCreativity, InfoCreativity); }
+
+// Generosity
+// -----------------
+function generosityClick() { swap(ImgGenerosity, TitleGenerosity, InfoGenerosity); }
+
+// Excellence
+// -----------------
+function excellenceClick() { swap(ImgExcellence, TitleExcellence, InfoExcellence); }
+
+// Friendliness
+// -----------------
+function friendlinessClick() { swap(ImgFriendliness, TitleFriendliness, InfoFriendliness); }
+
+// ---------------------------------------- //
+// HELPER FUNCTIONS
+// ---------------------------------------- //
+
+function swap(imgSrc, value, info) {
+   selectedImg.style.backgroundImage = "url("+imgSrc+");" // <------ Fix Error Here
+   console.log(imgSrc);
+   selectedValue.innerText = value;
+   valueInfo.innerText = info;
+}

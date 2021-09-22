@@ -64,8 +64,7 @@ function friendlinessClick() { swap(ImgFriendliness, TitleFriendliness, InfoFrie
 // ---------------------------------------- //
 
 function swap(imgSrc, value, info) {
-   selectedImg.style.backgroundImage = "url("+imgSrc+");" // <------ Fix Error Here
-   console.log(imgSrc);
+   selectedImg.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) , url('${imgSrc}')`;
    selectedValue.innerText = value;
    valueInfo.innerText = info;
 }

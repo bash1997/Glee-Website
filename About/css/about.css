@@ -41,8 +41,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  padding: 195px;
-  color: white;
+  padding: 75px;
   text-align: center;
 }
 
@@ -58,9 +57,6 @@
 
 .slidingBoxes {
   flex-flow: row wrap;
-}
-
-.slidingBoxes {
   display: flex;
   justify-content: center;
   align-content: center;

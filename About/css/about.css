@@ -60,7 +60,10 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  flex-flow: row wrap;
+}
+
+.slidingBoxes button {
+  margin-right: 10px;
 }
 
 /* ---------------------------------------- */
@@ -102,6 +105,7 @@
   flex-flow: column wrap;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 .bullet-select button {

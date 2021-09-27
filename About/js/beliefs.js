@@ -16,15 +16,6 @@ var selectedImg = document.getElementById("display");
 var selectedValue = document.getElementById("selected-belief");
 var valueInfo = document.getElementById("belief-info");
 
-// Image Sources
-const ImgTrinity = "";
-const ImgBible = "";
-const ImgJesus = "";
-const ImgSalvation = "";
-const ImgSacraments = "";
-const ImgHolySpirit = "";
-const ImgChurch = "";
-
 // Belief Titles
 const TitleTrinity = "The Trinity";
 const TitleBible = "The Bible";
@@ -35,52 +26,37 @@ const TitleHolySpirit = "The Holy Spirit";
 const TitleChurch = "The Church";
 
 // Belief Info
-const InfoTrinity = "1";
-const InfoBible = "2";
-const InfoJesus = "3";
-const InfoSalvation = "4";
-const InfoSacraments = "5";
-const InfoHolySpirit = "6";
-const InfoChurch = "7";
+const InfoTrinity = "Trinity info goes here.";
+const InfoBible = "Bible info goes here.";
+const InfoJesus = "Jesus info goes here.";
+const InfoSalvation = "Salvation info goes here.";
+const InfoSacraments = "Sacraments info goes here.";
+const InfoHolySpirit = "Holy Spirit info goes here.";
+const InfoChurch = "Church info goes here.";
 
 // ---------------------------------------- //
 // FUNCTIONS
 // ---------------------------------------- //
 
-function trinityClick() {
-    swap(ImgTrinity,TitleTrinity,InfoTrinity);
-}
+function trinityClick() {swap(TitleTrinity,InfoTrinity);}
 
-function bibleClick() {
-    swap(ImgBible,TitleBible,InfoBible);
-}
+function bibleClick() {swap(TitleBible,InfoBible);}
 
-function jesusClick() {
-    swap(ImgJesus,TitleJesus,InfoJesus);
-}
+function jesusClick() {swap(TitleJesus,InfoJesus);}
 
-function salvationClick() {
-    swap(ImgSalvation,TitleSalvation,InfoSalvation);
-}
+function salvationClick() {swap(TitleSalvation,InfoSalvation);}
 
-function sacramentsClick() {
-    swap(ImgSacraments,TitleSacraments,InfoSacraments);
-}
+function sacramentsClick() {swap(TitleSacraments,InfoSacraments);}
 
-function holySpiritClick() {
-    swap(ImgHolySpirit,TitleHolySpirit,InfoHolySpirit);
-}
+function holySpiritClick() {swap(TitleHolySpirit,InfoHolySpirit);}
 
-function churchClick() {
-    swap(ImgChurch,TitleChurch,InfoChurch);
-}
+function churchClick() {swap(TitleChurch,InfoChurch);}
 
 // ---------------------------------------- //
 // HELPER FUNCTIONS
 // ---------------------------------------- //
 
-function swap(imgSrc, value, info) {
-    selectedImg.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) , url('${imgSrc}')`;
+function swap(value, info) {
     selectedValue.innerText = value;
     valueInfo.innerText = info;
  }

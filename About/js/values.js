@@ -45,10 +45,7 @@ function partnershipsClick() { swap(ImgPartnerships, TitlePartnerships, InfoPart
 
 // Creativity
 // -----------------
-function creativityClick() { 
-   swap(ImgCreativity, TitleCreativity, InfoCreativity); 
-   // colorChange(creativityButton);
-}
+function creativityClick() { swap(ImgCreativity, TitleCreativity, InfoCreativity); }
 
 // Generosity
 // -----------------
@@ -71,7 +68,3 @@ function swap(imgSrc, value, info) {
    selectedValue.innerText = value;
    valueInfo.innerText = info;
 }
-
-// function colorChange(button) {
-//    button.style.backgroundColor = "#fff";
-// }

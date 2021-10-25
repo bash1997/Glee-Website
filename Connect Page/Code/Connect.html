@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect Page</title>
-    <link rel="stylesheet" href="../GleeChurchWebsite/stylesheet.css">
+
+    <link rel="stylesheet" href="../stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
@@ -16,12 +17,12 @@
 <body>
     
     <div class="testFlex">
-        <div id="logo"><a id="gleeLogo" href=""><img id="headerLogo" src="../img/Capture.PNG" alt="Glee logo"></a></div>
+        <div id="logo"><a id="gleeLogo" href="../../index.html"><img id="headerLogo" src="../img/Capture.PNG" alt="Glee logo"></a></div>
         
         <div class="header" id="menuLinks">
-            <a class="link" href="">About</a>
+            <a class="link" href="../../About/about.html">About</a>
             <a href="Connect.html">Connect</a>
-            <a href="">Sermons</a>
+            <a href="../../sermon/sermon.html">Sermons</a>
             <a href="">Give</a>      
         </div>
         <div class="menuButton" id="menu">
@@ -35,198 +36,501 @@
             <h1>Find Your Place at Glee</h1>
         </div>
         <div class="slidingBoxes">
-            <div class="norm-block flexitem"><!--Figure out how to link a seperate react page instead of inline like this-->
-                <div id="tofeeds"></div>
-
-
-                <script type="text/babel">
-                
-                
-
-                    function FeedsList(){
-                        return 
-                        <div>
-                            <button>Common</button>
-                            <br></br>
-                            <button>Prayer Request</button>
-                            <br></br>
-                            <button>Bible Study</button>
-                            <br></br>
-                            <button>Show Feeds</button><button>Hide Feeds</button>
-                        </div>
-                    }
-
-                    function originalMessage(){
-                        return (
-                            <div>
-                                See the Social Feeds
-                                <br></br>
-                                <button>Show Feeds</button><button>Hide Feeds</button>
-                            </div>
-                            );
-                    }
-
-                    function display(props){
-                        const displayStage = props.stage;
-                        if(stage == 0){
-                            return <originalMessage />;
-                        }else if (stage == 1){
-                            return <FeedsList />;
-                        }
-                    }
-
-                    class SeeFeeds extends React.Component {
-                      render() {
-                        return originalMessage();
-                      }
-                    }
-         
-                    //ReactDOM.render(<SeeFeeds />, document.getElementById('tofeeds'))
-                    
-class LoginControl extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleLoginClick = this.handleLoginClick.bind(this);
-    this.handleLogoutClick = this.handleLogoutClick.bind(this);
-    this.handleCommonClick = this.handleCommonClick.bind(this);
-    this.state = {isLoggedIn: 0};
-  }
-
-  //Makes button work
-
-  //anywhere => list of feeds
-  handleLoginClick() {
-    this.setState({isLoggedIn: 1});
-  }
-
-  //anywhere => start
-  handleLogoutClick() {
-    this.setState({isLoggedIn: 0});
-  }
-
-  //list of feeds => commonfeed
-  handleCommonClick(){
-    this.setState({isLoggedIn: 2});
-  }
-
-  render() {
-    const isLoggedIn = this.state.isLoggedIn;
-
-    //creates the component
-    return (
-      <div >
-        <Greeting isLoggedIn={isLoggedIn} />
-        <LoginButton onClick={this.handleLoginClick} />
-        <LogoutButton onClick={this.handleLogoutClick} />
-      </div>
-    );
-  }
-}
-
-//Content of Component
-
-//shows list of feeds
-function UserGreeting(props) {
-  return <div>
-    <CommonFeed onClick = {LoginControl.handleCommonClick} />
-    </div>;
-}
-
-//original content
-function GuestGreeting(props) {
-  return <div>See the Social Feed!</div>;
-}
-
-//shows commonfeed
-function SeeCommonFeed(props){
-    return <div>Common Feed</div>;
-}
-
-
-//Rotates Content of Component on button clicks
-
-function Greeting(props) {
-    console.log(props)
-  const isLoggedIn = props.isLoggedIn;
-  if (isLoggedIn == 0) {
-    return <GuestGreeting />;
-  }else if(isLoggedIn == 1){
-    return <UserGreeting />;
-  }else if(isLoggedIn == 2){
-    return <SeeCommonFeed />;
-  }
-  
-}
-
-//React Buttons
-
-//show social feed list
-function LoginButton(props) {
-  return (
-    <button onClick={props.onClick}>
-      Open Social Feeds
-    </button>
-  );
-}
-
-//Reverts Component to begining
-function LogoutButton(props) {
-  return (
-    <button onClick={props.onClick}>
-      Hide Social Feeds
-    </button>
-  );
-}
-
-//Shows the common feed
-function CommonFeed(props){
-    return(
-        <button onClick={props.onClick} >
-            Common Feed
-        </button>
-    );
-}
-
-ReactDOM.render(
-  <LoginControl />,
-  document.getElementById('tofeeds')
-);
-
-
-                  </script>
-
-                
-                <!--
-                <button onclick="showSocialFeed(document.getElementById('tofeeds'))">Show options</button>
-                <button onclick="hideSocialFeed(document.getElementById('tofeeds'))">Hide Options</button>
-                -->
-            </div>
             <div class="norm-block flexitem">
-                <div id="toCard">Fill Out Our Connection Card</div>
-                <button onclick="showConnectCard(document.getElementById('toCard'))">Open Connection Card</button>
-                <button onclick="hideConnectCard(document.getElementById('toCard'))">Close Connection Card</button>
+                <div id="tofeeds"></div>
             </div>
 
-        
-        <!--
-                Placeholder
-        
-            </details>
-                <summary>Connection Card</summary>
-                <div>
-                
+            <div class="norm-block flexitem">
+                <div id='toCard'></div>
+                <!-- <div id="toCard">Fill Out Our Connection Card</div>
+                <button onclick="showConnectCard(document.getElementById('toCard'))">Open Connection Card</button>
+                <button onclick="hideConnectCard(document.getElementById('toCard'))">Close Connection Card</button> -->
+            </div>
+<!--Figure out how to link a seperate react page instead of inline like this-->
+  <script type="text/babel">
+
+
+    class SocialFeeds extends React.Component {
+        constructor(){
+            super();
+
+            this.state = {
+                componentIndex: 0,
+                msg: '',
+                feed:['Common', 'Practice'],
+                prayFeed:['Prayer Request', 'Practice'],
+                bibleFeed:['Bible Study', 'Practice']
+            };
+
+            this.handleShowClick = this.handleShowClick.bind(this);
+            this.handleHideClick = this.handleHideClick.bind(this);
+            this.handleCommonClick = this.handleCommonClick.bind(this);
+            this.handlePrayerClick = this.handlePrayerClick.bind(this);
+            this.handleBibleClick = this.handleBibleClick.bind(this);
+        }
+        handleShowClick = () => {
+            this.setState({ componentIndex: 1});
+        }
+        handleHideClick = () => {
+            this.setState({ componentIndex: 0});
+        }
+        handleCommonClick = () => {
+            this.setState({ componentIndex: 2 });
+        };
+        handlePrayerClick = () => {
+            this.setState({ componentIndex: 3 });
+        };
+        handleBibleClick = () => {
+            this.setState({ componentIndex: 4 });
+        };
+        handleMsg = event => {
+            this.setState({ msg: event.target.value});
+        };
+
+        updateFeed = event => {
+            event.preventDefault();
+            let newFeed = this.state.feed.slice();
+            newFeed.push(this.state.msg);
+            this.setState({
+                msg: "",
+                feed: newFeed
+            });
+            console.log(this.state.feed, newFeed);
+            console.log('success');
+        };
+
+        updatePrayFeed = event => {
+            event.preventDefault();
+            let newfeed = this.state.prayFeed.slice();
+            newfeed.push(this.state.msg);
+            this.setState({
+                msg:'',
+                prayFeed: newfeed
+            });
+            console.log(this.state.prayFeed, newfeed);
+            console.log('pray Success')
+        }
+
+        updateBibleFeed = event => {
+            event.preventDefault();
+            let newfeed = this.state.bibleFeed.slice();
+            newfeed.push(this.state.msg);
+            this.setState({
+                msg:'',
+                bibleFeed: newfeed
+            });
+            console.log(this.state.bibleFeed, newfeed);
+            console.log('bible Success')
+        }
+
+        homePage(){
+            return <div>See the Social Feed</div>
+        };
+
+        feedsList(){
+            return(
+            <div className="buttonList">
+                <button className="feedButton" onClick={this.handleCommonClick}>Common</button>
+                <button className="feedButton" onClick={this.handleBibleClick}>Bible Study</button>
+                <button className='feedButton' onClick={this.handlePrayerClick}>Prayer Request</button>
+            </div>
+            )
+        };
+
+        common(){
+            let feed = this.state.feed.map(feedMsg => <li>{feedMsg}</li>);
+            return (
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onClick={this.handleShowClick}>&times;</span>
+                        <p>Common Feed</p>
+                        <div class='commonFeed'>
+                           <ul> {feed} </ul>
+                        </div>
+                        <div class='commonFeedSubmit'>
+                            <form onSubmit={this.updateFeed}>
+                                <input 
+                                type='text' 
+                                placeholder="type here" 
+                                value={this.state.msg} 
+                                onChange={this.handleMsg} 
+                                />
+                                <input type='submit'/>
+                            </form>
+                            <p>Msg: {this.state.msg}</p>
+                        </div>
+                    </div>
+                    
                 </div>
-            </details>
-            <details>
-                <summary>Social Feed</summary>
-                <div>
-                    Common
-                    Prayer Requests
-                    Bible Study
+            
+            )
+        };
+
+        prayerRequest(){
+            let prayFeed = this.state.prayFeed.map(feedMsg => <li>{feedMsg}</li>)
+            return (
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onClick={this.handleShowClick}>&times;</span>
+                        <p>Prayer Request Feed</p>
+                        <div class='prayerFeed'>
+                            {prayFeed}
+                        </div>
+                        <div class='prayerFeedSubmit'>
+                            <form onSubmit={this.updatePrayFeed}>
+                                <input 
+                                type="text"
+                                placeholder='type here'
+                                value={this.state.msg}
+                                onChange={this.handleMsg}
+                                />
+                            </form>
+                            <p>Msg: {this.state.msg}</p>
+                        </div>
+
+                    </div>
+                    
                 </div>
-            </details>
+            
+            )
+        };
+
+        bibleStudy(){
+            let bibleFeed = this.state.bibleFeed.map(feedMsg => <li>{feedMsg}</li>)
+            return (
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onClick={this.handleShowClick}>&times;</span>
+                        <p>Bible Study Feed</p>
+                        <div class='bibleFeed'>
+                            {bibleFeed}
+                        </div>
+                        <div class='bibleFeedSubmit'>
+                            <form onSubmit={this.updateBibleFeed}>
+                                <input 
+                                type="text"
+                                placeholder='type here'
+                                value={this.state.msg}
+                                onChange={this.handleMsg}
+                                />
+                            </form>
+                        <p>Msg: {this.state.msg}</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            )
+        };
+
+        render(){
+            let stage = this.state.componentIndex;
+            let display;
+            //console.log(stage, 'Assigned state to variable');
+            if (stage == 0){
+                display = this.homePage();
+            }else if (stage == 1){
+                display = this.feedsList();
+                //console.log(display)
+            }else if (stage == 2){
+                display = this.common();
+                //console.log(display)
+            }else if (stage == 3){
+                display = this.prayerRequest();
+                //console.log(display)
+            }else if (stage == 4){
+                display = this.bibleStudy();
+                //console.log(display)
+            }
+            return (
+                <div>
+                {display}
+                <button className="button-orange" onClick={this.handleShowClick}>Show Feeds</button>
+                <button className="button-orange" onClick={this.handleHideClick}>Hide Feeds</button>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render( 
+        <SocialFeeds />,
+        document.getElementById('tofeeds')
+    );
+
+</script>
+
+<script type="text/babel">
+    class ConnectionCard extends React.Component{
+        constructor(){
+            super();
+
+            this.state = {
+                showStage: 0,
+                questionIndex: 0,
+                answer: '',
+                answerArray:[],
+                labels: ['Name:','Email:','Gender:','Birthday:','Phone:','Street Address:',
+                'apt/unit/box:','City:','State:','Postal Code:','Household Members:','Platform:',
+                'contact:', 'First Time:', 'Prayer Requests:']
+            }
+
+            this.handleShowClick = this.handleShowClick.bind(this);
+            this.handleHideClick = this.handleHideClick.bind(this);
+            
+        }
+        handleShowClick = () =>{
+            this.setState({showStage: 1});
+        }
+        handleHideClick = () =>{
+            this.setState({
+                showStage: 0,
+                questionIndex:0
+            });
+        }
+        handleAnswer = event => {
+            this.setState({ 
+                answer: event.target.value
+            });
+        }
+        updateAnswers = event => {
+            event.preventDefault();
+            console.log( 'New Answer: ', this.state.answer);
+            if(document.getElementById('nam') && this.state.answer ==='' || document.getElementById('ema') && this.state.answer ==='' || document.getElementById('pho') && this.state.answer ===''){
+                alert('Question Required')
+            }else{
+                let label = this.state.labels.slice();
+                let newFeed = this.state.answerArray.slice();
+                let x = this.state.questionIndex
+                newFeed.push(label[x] + ' ' + this.state.answer);
+                console.log('Label #' + x)
+                this.setState({
+                    answer: "",
+                    answerArray: newFeed,
+                    questionIndex: this.state.questionIndex + 1
+                });
+                console.log(this.state.answerArray)
+            }
+        };
+        home(){
+            return <h3>Connection Card</h3>
+        }
+        connectCard(){
+            let index = this.state.questionIndex;
+            let questionList = this.state.questionArray;
+            let connectCardAnswers = this.state.answerArray.map(answer => <li>{answer}</li>)
+            console.log('question #:', index)
+            let question;
+            let questionArray = [
+                <form className='questions'>
+                <label for='nam'>Enter full Name:</label>
+                <input 
+                id='nam'
+                type='text'
+                placeholder='Full Name'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />
+                </form>,
+                <form>
+                <label for='ema'>Enter Email:</label>
+                <input 
+                id='ema'
+                type='text'
+                placeholder='Email Address'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />
+                </form>,
+                <form>
+                <label for='gen'>Gender:</label>
+                <input 
+                id='gen'
+                type='text'
+                placeholder='Gender'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />
+                </form>,
+                <form>
+                <label for='bir'>Date Of Birth:</label>
+                <input 
+                id='bir'
+                type='date'
+                placeholder='Birthday'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />
+                </form>,
+                <form>
+                <label for='pho'>Enter Phone Number</label>
+                <input 
+                id='pho'
+                type='text'
+                placeholder='Phone Number'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />
+                </form>,
+                <form>
+                <label for='add'>Enter Address:</label>
+                <input 
+                id='add'
+                type='text'
+                placeholder='Street Address'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />
+                </form>,
+                <form>
+                <label for='apt'>Enter Address:</label>
+                <input 
+                id='apt'
+                type='text'
+                placeholder='apt/unit/box'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />
+                </form>,
+                <form>
+                <label for='cit'>Enter Address:</label>
+                <input 
+                id='cit'
+                type='text'
+                placeholder='City'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />
+                </form>,
+                <form>
+                <label for='sta'>Enter Address:</label>
+                <input 
+                id='sta'
+                type='text'
+                placeholder='State'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />
+                </form>,
+                <form>
+                <label for='pos'>Enter Address:</label>
+                <input 
+                id='pos'
+                type='text'
+                placeholder='Postal Code'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />
+                </form>,
+                <input 
+                type='number'
+                placeholder='Household Members'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />,
+                <input 
+                type='text'
+                placeholder='Which Platform are you joining from'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />,
+                <form>
+                <label for='tex'>Text:</label>
+                <input 
+                id='tex'
+                type='checkbox'
+                placeholder='Preferred Method of Contact'
+                value='Text'
+                onChange={this.handleAnswer}
+                />
+                <label for='pho'>Phone:</label>
+                <input 
+                id='pho'
+                type='checkbox'
+                placeholder='Preferred Method of Contact'
+                value='Phone'
+                onChange={this.handleAnswer}
+                />
+                <label for='ema'>Email:</label>
+                <input 
+                id='ema'
+                type='checkbox'
+                placeholder='Preferred Method of Contact'
+                value='Email'
+                onChange={this.handleAnswer}
+                />
+                </form>,
+                <form>
+                <label for='yes'>First Time?</label><br></br>
+                <label for='yes'>Yes</label>
+                <input 
+                id='yes'
+                type='checkbox'
+                placeholder='First Time'
+                value='Yes'
+                onChange={this.handleAnswer}
+                />
+                <label for='no'>No</label>
+                <input 
+                id='no'
+                type='checkbox'
+                placeholder='First Time'
+                value='No'
+                onChange={this.handleAnswer}
+                />
+                </form>
+                ,
+                <input 
+                type='text'
+                placeholder='Prayer Requests/Questions'
+                value={this.state.answer}
+                onChange={this.handleAnswer}
+                />,
+                <ul>{connectCardAnswers}</ul>
+            ];
+            if(index < 16 ){
+                question = questionArray[index]
+            }else{
+                this.setState({
+                    questionIndex:0,
+                    answerArray:[]
+                })
+            }
+            
+            return(
+                <form onSubmit={this.updateAnswers}>
+                    {question}
+                    <br></br>
+                    <input type='submit'/>
+                </form>
+            )
+        }
+        render(){
+        let index = this.state.showStage;
+        let display; 
+        if (index == 0){
+            display = this.home();
+        }else if(index == 1){
+            display = this.connectCard();
+        }
+            return(
+                <div>
+                    {display}
+                    <button onClick={this.handleShowClick}>Show Card</button>
+                    <button onClick={this.handleHideClick}>Hide Card</button> 
+                </div>
+            )
+            
+        }
+    }
+
+    ReactDOM.render(
+        <ConnectionCard/>,
+        document.getElementById('toCard')
+    );
+</script>
+            
+
         
-        -->
         </div>
         <div class="orange-block">
             <h1>Serve at Glee</h1>

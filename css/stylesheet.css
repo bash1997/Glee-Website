@@ -23,6 +23,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Silvertone';
+    src: url('../Fonts/silvertone/Silvertone.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
 /* ---------------------------------------- */
 /* BASIC SETUP */
 /* ---------------------------------------- */
@@ -134,7 +141,7 @@ i {
 }
 
 #menuLinks{
-    display: flex;
+    display: none;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
@@ -220,6 +227,7 @@ a#gleeLogo {
 footer {
     text-align: left;
     /* font-family: 'Catamaran'; */
+    font-size: 18px;
 }
 
 footer div {
@@ -230,11 +238,24 @@ footer h6 {
     font-weight: 400;
 }
 
+footer section {
+    margin-bottom: 0;
+}
+
 .bio {
-    border-bottom: #555 solid 1px;
+    border-bottom: #555 solid 1.25px;
     padding-bottom: 2.5rem;
     text-align: left;
     width: 90%;
+    height: auto;
+}
+
+.bio img {
+    width: 20%;
+}
+
+.bio span {
+    display: none;
 }
 
 .bio h6 {
@@ -270,6 +291,37 @@ footer h6 {
     width: 90%;
 }
 
+.church-info {
+    margin-bottom: 0;
+}
+
+footer aside {
+    width: 100%;
+}
+
+footer aside.flex {
+    justify-content: center;
+}
+
+footer aside div {
+    text-align: left;
+    width: 45%;
+}
+
+footer aside h6 {
+    font-weight: 700;
+}
+
+#footer-about {
+    display: none;
+}
+
+#footer-about a,
+#footer-connect a,
+#footer-more a {
+    color: inherit;
+    text-decoration: none;
+}
 
 /* ---------------------------------------- */
 /* DIV BLOCKS */
@@ -325,7 +377,6 @@ button {
     margin-bottom: .75rem;
     width: 70%;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px black;
 }
 
 button {
@@ -403,30 +454,77 @@ main {
     }
 
     footer.flex {
-        flex-direction: column;
-    }
-
-    footer div {
-        width: 50%;
+        /* flex-direction: column; */
+        align-items: flex-start;
     }
 
     .bio.flex {
         justify-content: space-between;
+        align-items: center;
     }
 
-    .social,
-    .church-info,
-    .sundays,
-    .copyright {
-        max-width: 400px;
+    .bio img {
+        width: 15%;
+    }
+
+    .bio span {
+        display: unset;
+        width: 0;
+        border-left: grey solid .5px;
+    }
+
+    .bio h6 {
+        width: 75%;
+    }
+
+    .church-info {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .contact.flex {
         justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .sundays.flex {
+        justify-content: space-around;
+    }
+
+    .contact {
+        width: 45%;
+        text-align: center;
+        order: 1;
+    }
+
+    .contact span {
+        display: none;
     }
 
     .sundays {
+        width: 45%;
+        text-align: center;
+    }
+
+    footer aside {
+        /* max-width: 600px; */
         width: 100%;
+    }
+
+    footer aside.flex {
+        justify-content: flex-end;
+    }
+
+    footer aside div {
+        width: 33%;
+        text-align: center;
+    }
+
+    #footer-about {
+        display: unset;
+    }
+
+    footer .copyright {
     }
 }
 
@@ -445,5 +543,88 @@ main {
 
     #menuLinks {
         width: 80%;
+        display: flex;
     }
+
+    footer.flex {
+        justify-content: space-evenly;
+    }
+
+    footer h6,
+    footer a {
+        font-size: 1rem;
+    }
+
+    footer section {
+        width: 27%;
+    }
+
+    footer aside {
+        width: 60%;
+        /* height: 352px; */
+    }
+
+    footer section.flex {
+        align-content: space-between;
+    }
+
+    footer section div,
+    .contact,
+    .sundays {
+        width: 100%;
+        order: unset;
+    }
+
+    .bio img {
+        width: 7%;
+    }
+
+    .bio h6 {
+        width: 90%;
+    }
+
+
+    .social.flex {
+        justify-content: space-between;
+    }
+
+    .church-info {
+        height: 80%;
+    }
+
+    .church-info.flex {
+        align-content: space-evenly;
+    }
+
+    .contact.flex {
+        flex-direction: row;
+    }
+
+    .contact {
+        color: rgb(246, 87, 34);
+    }
+
+    .contact a {
+        color: rgb(246, 87, 34);
+    }
+
+    .contact span {
+        display: unset;
+        color: #555;
+    }
+
+    .sundays {
+        text-align: left;
+        max-width: unset;
+    }
+
+    footer aside.flex {
+        justify-content: flex-start;
+    }
+
+    footer aside div {
+        text-align: left;
+        width: 27%;
+    }
+
 }

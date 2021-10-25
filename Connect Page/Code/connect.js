@@ -1,23 +1,26 @@
 
 //Social Feeds JS
-
-//needs chat rooms(https://code.tutsplus.com/tutorials/how-to-create-a-simple-web-based-chat-application--net-5931)
-
-function showSocialFeed (obj) {
-    obj.innerHTML ="<div'><button onclick=\"showCommonFeed(document.getElementById('tofeeds'))\">Common</button></div>\
-    <div><button><a class='gleeBtn' href=''>Prayer Requests</a></button></div>\
-    <div><button><a class='gleeBtn' href=''>Bible Study</a></button></div>\
-    <!--<div><button><a class='gleeBtn' onclick=''>Hide</a></button></div>-->"
-    ;
-}
-function showCommonFeed(obj){
-    obj.innerHTML ="<div id=\"commmonFeed\">oh hi</div>"
-}
+//all in html React
 
 
-function hideSocialFeed (obj){
-    obj.innerHTML = 'See the Social Feed'
-}
+
+// //needs chat rooms(https://code.tutsplus.com/tutorials/how-to-create-a-simple-web-based-chat-application--net-5931)
+
+// function showSocialFeed (obj) {
+//     obj.innerHTML ="<div'><button onclick=\"showCommonFeed(document.getElementById('tofeeds'))\">Common</button></div>\
+//     <div><button><a class='gleeBtn' href=''>Prayer Requests</a></button></div>\
+//     <div><button><a class='gleeBtn' href=''>Bible Study</a></button></div>\
+//     <!--<div><button><a class='gleeBtn' onclick=''>Hide</a></button></div>-->"
+//     ;
+// }
+// function showCommonFeed(obj){
+//     obj.innerHTML ="<div id=\"commmonFeed\">oh hi</div>"
+// }
+
+
+// function hideSocialFeed (obj){
+//     obj.innerHTML = 'See the Social Feed'
+// }
 
 
 

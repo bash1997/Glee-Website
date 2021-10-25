@@ -7,21 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leadership</title>
     <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="./css/about.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./css/leadership.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Main Header -->
-    <!-- <header> -->
-        <!-- Navbar -->
-        <!-- <nav>
-            <li> <a href="#"> Home </a> </li>
-            <li> <a href="#"> About </a> </li>
-            <li> <a href="#"> Connection Card </a> </li>
-            <li> <a href="#"> Sermons </a> </li>
-        </nav> -->
-
-        <!-- Navbar -->
+    <!-- Navbar -->
         <div class="testFlex">
             <!-- Logo -->
             <a id="gleeLogo" href="../index.html"><img src="./Img/icons/logo.png" alt="Glee logo"></a>
@@ -45,23 +37,33 @@
         <!-- Opening -->
         <div class="orange-block">
             <h1>Leadership</h1>
-            <h2>We at GleeChurch take our morals and ethics seriously.</h2> <br>
+            <h2>Enter Description Here.</h2> <br>
         </div>
-    <!-- </header> -->
 
-    <!-- List of all leaders -->
-    <div class="leaders-list">
-        <div class="leader-select">
-            <a>leader1</a>
-            <a>leader2</a>
-            <a>leader3</a>
-            <a>leader4</a>
-            <a>leader5</a>
-            <a>leader6</a>
-            <a>leader7</a>
+    <div class="leader-display" id="display">
+        
+        <div class="slidingBoxes">
+            <div class="leader-image" id="image">
+                <img src="./Img/icons/profile.png">
+            </div>
+            
+            <div class="leader-text">
+                <h1 id="title">Title</h1>
+                <h2 id="name">Name</h2>
+                <h3 id="description">Description</h3>
+            </div>
         </div>
     </div>
+
+    <!-- List of all leaders -->
+    <div class="leaders-list" id="leaders">
+        <button id="previous" onclick="clickPrev()"><i class="fas fa-arrow-circle-left"></i></button>
+        <div class="icon-list">
+        </div>
+        <button id="next" onclick="clickCurr()"><i class="fas fa-arrow-circle-right"></i></button>
+    </div>
     <script src="./js/header.js" defer></script>
+    <script src="./js/leadership.js" defer></script>
 </body>
 
 </html>

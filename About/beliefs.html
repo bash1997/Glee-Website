@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beliefs</title>
     <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="./css/about.css" rel="stylesheet" href="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -48,21 +49,26 @@
     <!-- </header> -->
     
     <!-- Belief Goes Here -->
-    <div class="bullet-display">
-        Belief goes here.
+    <div class="belief-display" id="display">
+        <h1 id="selected-belief">The Trinity</h1>
+        <h2 id="belief-info">Trinity Info Goes Here.</h2>
+
+        <!-- Select Church Beliefs Here -->
+        <div class="bullet-select">
+            <div class="slidingBoxes">
+                <button id="trinity" onclick="trinityClick()">The Trinity</button>
+                <button id="bible" onclick="bibleClick()">​The Holy Bible</button>
+                <button id="jesus" onclick="jesusClick()">Jesus</button>
+            </div>
+            <div class="slidingBoxes">
+                <button id="salvation" onclick="salvationClick()">Salvation</button>
+                <button id="sacraments" onclick="sacramentsClick()">​Sacraments</button>
+                <button id="holy-spirit" onclick="holySpiritClick()">​Holy Spirit</button>
+                <button id="church" onclick="churchClick()">​The Church</button>
+            </div>
+        </div>
     </div>
 
-    <!-- Select Church Beliefs Here -->
-    <div class="bullet-select">
-        <button id="trinity" onclick="trinityClick()">The Trinity</button>
-        <button id="bible" onclick="bibleClick()">​The Holy Bible</button>
-        <button id="jesus" onclick="jesusClick()">Jesus</button>
-        <button id="salvation" onclick="salvationClick()">Salvation</button>
-        <button id="sacraments" onclick="sacramentsClick()">​Sacraments</button>
-        <button id="holy-spirit" onclick="holySpiritClick()">​Holy Spirit</button>
-        <button id="church" onclick="churchClick()">​The Church</button>
-    </div>
-    
     <script src="./js/beliefs.js" defer></script>
     <script src="./js/header.js" defer></script>
 </body>

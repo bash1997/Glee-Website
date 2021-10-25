@@ -11,34 +11,52 @@ var sacramentsButton = document.getElementById("sacraments");
 var holySpiritButton = document.getElementById("holy-spirit");
 var churchButton = document.getElementById("church");
 
+// Display Properties
+var selectedImg = document.getElementById("display");
+var selectedValue = document.getElementById("selected-belief");
+var valueInfo = document.getElementById("belief-info");
+
+// Belief Titles
+const TitleTrinity = "The Trinity";
+const TitleBible = "The Bible";
+const TitleJesus = "Jesus";
+const TitleSalvation = "Salvation";
+const TitleSacraments = "Sacraments";
+const TitleHolySpirit = "The Holy Spirit";
+const TitleChurch = "The Church";
+
+// Belief Info
+const InfoTrinity = "Trinity info goes here.";
+const InfoBible = "Bible info goes here.";
+const InfoJesus = "Jesus info goes here.";
+const InfoSalvation = "Salvation info goes here.";
+const InfoSacraments = "Sacraments info goes here.";
+const InfoHolySpirit = "Holy Spirit info goes here.";
+const InfoChurch = "Church info goes here.";
+
 // ---------------------------------------- //
 // FUNCTIONS
 // ---------------------------------------- //
 
-function trinityClick() {
-    console.log("trinity button works");
-}
+function trinityClick() {swap(TitleTrinity,InfoTrinity);}
 
-function bibleClick() {
-    console.log("bible button works");
-}
+function bibleClick() {swap(TitleBible,InfoBible);}
 
-function jesusClick() {
-    console.log("jesus button works");
-}
+function jesusClick() {swap(TitleJesus,InfoJesus);}
 
-function salvationClick() {
-    console.log("salvation button works");
-}
+function salvationClick() {swap(TitleSalvation,InfoSalvation);}
 
-function sacramentsClick() {
-    console.log("sacraments button works");
-}
+function sacramentsClick() {swap(TitleSacraments,InfoSacraments);}
 
-function holySpiritClick() {
-    console.log("holy spirit button works");
-}
+function holySpiritClick() {swap(TitleHolySpirit,InfoHolySpirit);}
 
-function churchClick() {
-    console.log("church button works");
-}
+function churchClick() {swap(TitleChurch,InfoChurch);}
+
+// ---------------------------------------- //
+// HELPER FUNCTIONS
+// ---------------------------------------- //
+
+function swap(value, info) {
+    selectedValue.innerText = value;
+    valueInfo.innerText = info;
+ }

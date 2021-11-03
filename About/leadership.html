@@ -1,69 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
+// ---------------------------------------- //
+// OBJECTS
+// ---------------------------------------- //
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leadership</title>
-    <link href="../css/stylesheet.css" rel="stylesheet">
-    <link href="./css/about.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="./css/leadership.css" rel="stylesheet">
-</head>
+class Leader {
+    constructor(icon,title,name,description) {
+        this.icon = icon;
+        this.title = title;
+        this.name = name;
+        this.description = description;
+    }
+}
 
-<body>
-    <!-- Navbar -->
-        <div class="testFlex">
-            <!-- Logo -->
-            <a id="gleeLogo" href="../index.html"><img src="./Img/icons/logo.png" alt="Glee logo"></a>
-            
-            <!-- Mobile/Tablet Menu Button -->
-            <div class="menuButton">
-                <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            
-            <!-- Links -->
-            <div class="header" id="menuLinks">
-                <a class="link" href="../About/about.html">About</a>
-                <a class="link" href="../Connect Page/Code/Connect.html">Connect</a>
-                <a href="">Sermons</a>
-                <a href="">Give</a>         
-            </div>
-        </div>
+// ---------------------------------------- //
+// VARIABLES
+// ---------------------------------------- //
 
-        <!-- Opening -->
-        <div class="orange-block">
-            <h1>Leadership</h1>
-            <h2>Enter Description Here.</h2> <br>
-        </div>
+// HTML Elements
+const btnPrev = document.getElementById("previous");
+const btnCurr = document.getElementById("current");
+const ledTitle = document.getElementById("title");
+const ledName = document.getElementById("name");
+const ledDescr = document.getElementById("description");
+const ledIcon = document.getElementById("image");
 
-    <div class="leader-display" id="display">
-        
-        <div class="slidingBoxes">
-            <div class="leader-image" id="image">
-                <img src="./Img/icons/profile.png">
-            </div>
-            
-            <div class="leader-text">
-                <h1 id="title">Title</h1>
-                <h2 id="name">Name</h2>
-                <h3 id="description">Description</h3>
-            </div>
-        </div>
-    </div>
+// Leaders
+const testLeader1 = new Leader("icon1","title1","name1","description1");
+const testLeader2 = new Leader("icon2","title2","name2","description2");
+const testLeader3 = new Leader("icon3","Lead Pastor","Lorenzo Moseley","Lorenzo Moseley, Jr. is the Lead Pastor of Glee Church in Bowie, Maryland. He is a native of the Washington, DC Metropolitan area. He is passionate about seeing people operate in their authentic gifting. ");
+const testLeader4 = new Leader("icon4","title4","name4","description4");
 
-    <!-- List of all leaders -->
-    <div class="leaders-list" id="leaders">
-        <button id="previous" onclick="clickPrev()"><i class="fas fa-arrow-circle-left"></i></button>
-        <div class="icon-list">
-        </div>
-        <button id="next" onclick="clickCurr()"><i class="fas fa-arrow-circle-right"></i></button>
-    </div>
-    <script src="./js/header.js" defer></script>
-    <script src="./js/leadership.js" defer></script>
-</body>
+// Array variables
+var leadersArray = [testLeader1,testLeader2,testLeader3,testLeader4];
+var index = 0;
 
-</html>
+// ---------------------------------------- //
+// BUTTON FUNCTIONS
+// ---------------------------------------- //
+
+function clickPrev() {
+    index--;
+    indexCheck();
+    getLeaderInfo();
+}
+
+function clickCurr() {
+    index++;
+    indexCheck();
+    getLeaderInfo();
+}
+
+// ---------------------------------------- //
+// HELPER FUNCTIONS
+// ---------------------------------------- //
+
+// Ensures that the index stays inbound
+function indexCheck() {
+    // Array length
+    const max = leadersArray.length-1;
+    
+    // If the index goes further than the length of array
+    if(index > max) {index = 0;}
+
+    // If the index goes below 0
+    else if(index < 0) {index = max;}
+}
+
+// Swap out current leader info from the array
+function getLeaderInfo() {
+    ledIcon.src = leadersArray[index].icon;
+    ledTitle.innerText = leadersArray[index].title;
+    ledName.innerText = leadersArray[index].name;
+    ledDescr.innerText = leadersArray[index].description;
+}

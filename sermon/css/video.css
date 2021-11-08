@@ -21,7 +21,7 @@ video {
 }
 
 .video-info.flex {
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   flex-flow: column nowrap;
 }
 
@@ -89,11 +89,11 @@ video {
   border-radius: 15px;
 }
 
-/* GERENAL VIDEO */
+/* GENERAL VIDEO */
 .sermon-video {
   width: 100%;
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .sermon-video.flex {
@@ -103,6 +103,7 @@ video {
 .sermon-video video {
   border-radius: 15px;
   width: 40%;
+  /* height: fit-content; */
 }
 
 .sermon-video .video-info {
@@ -150,6 +151,7 @@ video {
     width: 50%;
     padding-bottom: 30px;
     margin: 0;
+    margin-bottom: unset;
   }
 
   .sermon-video video {

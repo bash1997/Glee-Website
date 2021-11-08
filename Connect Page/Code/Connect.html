@@ -7,7 +7,7 @@
     <title>Connect Page</title>
 
     <link rel="stylesheet" href="../stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
@@ -17,19 +17,21 @@
 <body>
     
     <div class="testFlex">
-        <div id="logo"><a id="gleeLogo" href="../../index.html"><img id="headerLogo" src="../img/Capture.PNG" alt="Glee logo"></a></div>
+        <a id="gleeLogo" href="../../index.html"><img src="../img/logo.PNG" alt="Glee logo"></a>
         
-        <div class="header" id="menuLinks">
-            <a class="link" href="../../About/about.html">About</a>
-            <a href="Connect.html">Connect</a>
-            <a href="../../sermon/sermon.html">Sermons</a>
-            <a href="">Give</a>      
-        </div>
-        <div class="menuButton" id="menu">
+        <div class="menuButton">
             <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+
+        <div class="header" id="menuLinks">
+            <a href="../../About/about.html">About</a>
+            <a href="Connect.html">Connect</a>
+            <a href="../../sermon/sermon.html">Sermons</a>
+            <a href="">Give</a>      
+        </div>
+        
     </div>
 
         <div class="orange-block">
@@ -40,11 +42,8 @@
                 <div id="tofeeds"></div>
             </div>
 
-            <div class="norm-block flexitem">
+            <div  class="norm-block flexitem">
                 <div id='toCard'></div>
-                <!-- <div id="toCard">Fill Out Our Connection Card</div>
-                <button onclick="showConnectCard(document.getElementById('toCard'))">Open Connection Card</button>
-                <button onclick="hideConnectCard(document.getElementById('toCard'))">Close Connection Card</button> -->
             </div>
 <!--Figure out how to link a seperate react page instead of inline like this-->
   <script type="text/babel">
@@ -124,15 +123,15 @@
         }
 
         homePage(){
-            return <div>See the Social Feed</div>
+            return <h3>See all of our Social Feeds!</h3>
         };
 
         feedsList(){
             return(
             <div className="buttonList">
-                <button className="feedButton" onClick={this.handleCommonClick}>Common</button>
-                <button className="feedButton" onClick={this.handleBibleClick}>Bible Study</button>
-                <button className='feedButton' onClick={this.handlePrayerClick}>Prayer Request</button>
+                <button className="button-white" onClick={this.handleCommonClick}>Common</button>
+                <button className="button-white" onClick={this.handleBibleClick}>Bible Study</button>
+                <button className='button-white' onClick={this.handlePrayerClick}>Prayer Request</button>
             </div>
             )
         };
@@ -243,10 +242,10 @@
                 //console.log(display)
             }
             return (
-                <div>
+                <div className='socialFeed'>
                 {display}
-                <button className="button-orange" onClick={this.handleShowClick}>Show Feeds</button>
-                <button className="button-orange" onClick={this.handleHideClick}>Hide Feeds</button>
+                <button className="button-white" onClick={this.handleShowClick}>Show Feeds</button>
+                <button className="button-white" onClick={this.handleHideClick}>Hide Feeds</button>
                 </div>
             )
         }
@@ -312,7 +311,7 @@
             }
         };
         home(){
-            return <h3>Connection Card</h3>
+            return <h3>Fill out our Connection Card!</h3>
         }
         connectCard(){
             let index = this.state.questionIndex;
@@ -513,10 +512,10 @@
             display = this.connectCard();
         }
             return(
-                <div>
+                <div className='connectCard'>
                     {display}
-                    <button onClick={this.handleShowClick}>Show Card</button>
-                    <button onClick={this.handleHideClick}>Hide Card</button> 
+                    <button className='button-white' onClick={this.handleShowClick}>Show Card</button>
+                    <button className='button-white' onClick={this.handleHideClick}>Hide Card</button> 
                 </div>
             )
             
@@ -536,34 +535,80 @@
             <h1>Serve at Glee</h1>
         </div>
         <div>
-            <h2 class="norm-block title" style="background-image: url(../img/Volunteer.jpg);">Volunteer</h2>
+            <h2 class="norm-block title volunteer">Volunteer</h2>
 
 
-            <div class="norm-block flexitem test" id="VolTest">Testamonials</div>
+            <div class="norm-block flexitem" id="">Testamonials</div>
             <div class="slidingBoxes">
-                <div class="norm-block flexitem" id="VolButton">
-                    <button>
-                        <a class="gleeBtn" href="">Join Now!</a>
+                <div class="norm-block flexitem" id="">
+                    <button class="button-orange">
+                        <a class="" href="">Join Now!</a>
                     </button>
                 </div>
-                <div class="norm-block flexitem" id="VolRoles">List of Roles</div>
+                <div class="norm-block flexitem" id="VolRoles">
+                    <ul>List of roles</ul>
+                </div>
             </div>
         </div>
         <div>
-            <h2 class="norm-block title" style="background-image: url(../img/Intern.jpg);">Internship</h2>
+            <h2 class="norm-block title intern">Internship</h2>
             
 
-            <div class="norm-block flexitem test" id="InternTest">Testamonials</div>
+            <div class="norm-block flexitem" id="">Testamonials</div>
             <div class="slidingBoxes">
-                <div class="norm-block flexitem test" id="InternButton">
-                    <button class="gleeBtn">
-                        <a class="gleeBtn" href="">Join Now!</a>
+                <div class="norm-block flexitem" id="">
+                    <button class="button-orange">
+                        <a class="" href="">Join Now!</a>
                     </button>
                 </div>
-                <div class="norm-block flexitem test" id="InternRoles">List of Roles</div>
+                <ul class="norm-block" id="InternRoles">
+                    <li>Web Developer</li>
+                    <li>Graphic Designer</li>
+                </ul>
             </div>
         </div>
-      <div class="norm-block">Footer</div>
+      
+
+        <footer class="flex">
+            <div class="bio flex">
+              <img src="" alt="">
+              <h6>At Glee Church, our mission is to share the love of Jesus Christ and to reach the unchurched.</h6>
+            </div>
+        
+            <div class="social flex">
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+        
+            <div class="church-info flex">
+              <address class="contact flex">
+                <a href="mailto:hello@gleechurch.com">hello@gleechurch.com</a>
+                <span> | </span>
+                <p>301-887-5684</p>
+              </address>
+        
+              <div class="sundays">
+                <h6>Sundays 10:00 AM</h6>
+                <p>Tulip Grove Elementary</p>
+                <address>2909 Trainor Ln Bowie, MD 20715</address>
+              </div>
+            </div>
+        
+            <div class="copyright">
+              <h6> &copy; 2021 Glee Church - Maryland</h6>
+            </div>    
+            </footer>
+
+            <div id="bottom-contact">
+                <i class="fas fa-phone-alt"><span>Phone</span></i>
+                <i class="fas fa-envelope"><span>Email</span></i>
+                <i class="fab fa-facebook-square"><span>Facebook</span></i>
+            </div>
+
+
+
       <script src="connect.js"></script>
   </body>
 

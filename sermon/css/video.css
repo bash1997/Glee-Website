@@ -103,7 +103,6 @@ video {
 .sermon-video video {
   border-radius: 15px;
   width: 40%;
-  height: fit-content;
 }
 
 .sermon-video .video-info {

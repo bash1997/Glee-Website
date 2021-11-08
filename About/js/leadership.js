@@ -13,11 +13,12 @@ const btnCurr = document.getElementById("current");
 const ledTitle = document.getElementById("title");
 const ledName = document.getElementById("name");
 const ledDescr = document.getElementById("description");
+const ledIcon = document.getElementById("image");
 
 // Leaders
 const testLeader1 = new Leader("icon1","title1","name1","description1");
 const testLeader2 = new Leader("icon2","title2","name2","description2");
-const testLeader3 = new Leader("icon3","title3","name3","description3");
+const testLeader3 = new Leader("icon3","Lead Pastor","Lorenzo Moseley","Lorenzo Moseley, Jr. is the Lead Pastor of Glee Church in Bowie, Maryland. He is a native of the Washington, DC Metropolitan area. He is passionate about seeing people operate in their authentic gifting. ");
 const testLeader4 = new Leader("icon4","title4","name4","description4");
 
 // Array variables
@@ -43,11 +44,7 @@ function indexCheck() {
 }
 
 function getLeaderInfo() {
-    console.log(leadersArray[index].icon + " \n" +
-                leadersArray[index].title + " \n" +
-                leadersArray[index].name + " \n" +
-                leadersArray[index].description);
-    
+    ledIcon.src = leadersArray[index].icon;
     ledTitle.innerText = leadersArray[index].title;
     ledName.innerText = leadersArray[index].name;
     ledDescr.innerText = leadersArray[index].description;

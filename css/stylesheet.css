@@ -93,7 +93,7 @@ button, button a {
 }
 
 p {
-    font: 1rem;
+    font-size: 1rem;
 }
 
 i,
@@ -264,6 +264,14 @@ footer section {
 
 .social.flex {
     justify-content: space-around;
+}
+
+.social a {
+    min-width: 48px;
+    min-height: 48px;
+    width: 20%;
+    text-decoration: none;
+    color: unset;
 }
 
 .contact {

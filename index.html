@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/video.css">
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="./css/main.css">
+
     
     <!-- <link rel="stylesheet" href="/css/normalize.css"> -->
 
@@ -25,15 +26,15 @@
         </a>
     </div>
       <div class="header" id="menuLinks">
-          <a href="./About/about.html">About</a>
-          <a href="./connect/connect.html">Connect</a>
+          <a href="./about/about.html">About</a>
+          <a href="./connect/connection.html">Connect</a>
           <a href="./sermon/sermon.html">Sermons</a>
           <a href="">Give</a>         
       </div>
       
     </div>
 
-    <main>
+    <main class="flex">
       <!-- hero  -->
       <section id="hero" class="flex">
 
@@ -48,7 +49,7 @@
 
           <div id="message-info" class="flex">
             <h5>Pride Is A Dangerous Thing | Limitations</h5>
-            <a class="button-orange" href="#">Watch Message</a>
+            <a class="button-orange watch-feat" href="#">Watch Message</a>
             <a class="button-orange" href="./sermon/sermon.html">More Messages</a>
           </div><!-- end of message info  -->
 
@@ -59,7 +60,7 @@
       <section id="banner" class="flex">
         <!-- service info  -->
         <div id="service-info" class="flex">
-          <div class="address-info">
+          <div class="address-info flex">
             <div>
               <h6>Location</h6>
               <address class="">
@@ -79,7 +80,6 @@
           </div>
 
           <div class="flex directions">
-            <!-- <a class="button-white direct-button" href="https://goo.gl/maps/VRuicgm4kGeQkDim6" target="_blank">Directions</a> -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99271.2639543716!2d-76.87271740836692!3d38.96448442393964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7ebe5cbf8063f%3A0x5fef0d02716cd4d7!2sTulip%20Grove%20Elementary%20School!5e0!3m2!1sen!2sus!4v1629320149831!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
 
@@ -87,8 +87,8 @@
 
         <div id="app-graphic" class="flex">
           <!-- app graphic as background -->
-          <div class="app-graphic"></div>
-          <a class="button-white" href="#">Get App</a>
+          <div class="app-graphic flex"></div>
+          <a class="button-white" href="#">Get The App</a>
         </div><!-- end of app graphic -->
 
       </section><!-- end of banner -->
@@ -105,8 +105,9 @@
       <section id="cards" class="flex">
 
         <div id="newHere" class="connection flex">
-          <img class="card-img" src="./img/new_here.jpg" alt="Glee Members having fun">
-
+          <img src="./img/new_here.jpg" alt="Glee Members having fun">
+          <div class="img-overlay"></div>
+          
           <div class="card-info flex">
             <h3>New Here?</h3>
             <p>At Glee Church, you're empowered to be your authentic self. Here you can discover and live your purpose every day.</p>
@@ -116,7 +117,8 @@
         </div><!-- end of connection card -->
 
         <div id="volunteer" class="connection flex">
-          <img class="card-img" src="./img/volunteer.jpg" alt="">
+          <img src="./img/volunteer.jpg" alt="">
+          <div class="img-overlay"></div>
 
           <div class="card-info flex">
             <h3>Volunteer</h3>
@@ -157,10 +159,18 @@
 
       <section class="flex">
         <div class="social flex">
-          <i class="fab fa-youtube"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
+          <a href="https://www.youtube.com/channel/UCXvu8K-9tCU_GB8mg0SKw1w" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://twitter.com/GleeChurch" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/GleeChurch/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/glee.church/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
 
         <div class="church-info flex">
@@ -184,7 +194,7 @@
           <ul>
             <li>
               <a href="./about/leadership.html">
-                team
+                leaders
               </a>
             </li>
 
@@ -267,12 +277,10 @@
       <i class="fas fa-envelope"><span>Email</span></i>
       <i class="fab fa-facebook-square"><span>Facebook</span></i>
     </div>
-    
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/script.js"></script>
-    <script type="text/javascript" src="./js/footer.js"></script>
   </body>
 </html>

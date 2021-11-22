@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="socialFeedComponent.js"></script>
 </head>
 
 <body>
@@ -34,17 +35,32 @@
         
     </div>
 
+        <div class="norm-block featEvent"></div>
+        <div class="flex">
+            <a class="button-orange" href="">Sign Up Now!</a>
+          </div>
+
+
         <div class="orange-block">
             <h1>Find Your Place at Glee</h1>
         </div>
-        <div class="slidingBoxes">
-            <div class="norm-block flexitem">
-                <div id="tofeeds"></div>
-            </div>
 
+        <div class='slidingBoxes'>
             <div  class="norm-block flexitem">
                 <div id='toCard'></div>
             </div>
+            
+            <div class="norm-block flexitem cCardPic"></div>
+        </div>
+
+        <div class="slidingBoxes">
+            <div class='norm-block flexitem feedsPic'></div>
+            
+            <div class="norm-block flexitem">
+                <div id="tofeeds"></div>
+            </div>
+        </div>
+        
 <!--Figure out how to link a seperate react page instead of inline like this-->
   <script type="text/babel">
 
@@ -538,7 +554,7 @@
             <h2 class="norm-block title volunteer">Volunteer</h2>
 
 
-            <div class="norm-block flexitem" id="">Testamonials</div>
+            <div class="norm-block flexitem" id="VolTest">Testamonials</div>
             <div class="slidingBoxes">
                 <div class="norm-block flexitem" id="">
                     <button class="button-orange">
@@ -553,14 +569,15 @@
         <div>
             <h2 class="norm-block title intern">Internship</h2>
             
-
-            <div class="norm-block flexitem" id="">Testamonials</div>
+<!--make background designs for each of the 3 sections-->
+            <div class="norm-block flexitem" id="InternTest">Testamonials</div>
             <div class="slidingBoxes">
                 <div class="norm-block flexitem" id="">
                     <button class="button-orange">
                         <a class="" href="">Join Now!</a>
                     </button>
                 </div>
+                
                 <ul class="norm-block" id="InternRoles">
                     <li>Web Developer</li>
                     <li>Graphic Designer</li>
@@ -609,7 +626,7 @@
 
 
 
-      <script src="connect.js"></script>
+      <script src="js/connect.js"></script>
   </body>
 
 </html>

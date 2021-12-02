@@ -120,7 +120,7 @@ function indexCheck() {
 }
 
 // Swap out current leader info from the array
-function async await getLeaderInfo() {
+function getLeaderInfo() {
 
     //createIcon.src = leadersArray[index].icon;
     createIcon.src = "./img/icons/profile.png";

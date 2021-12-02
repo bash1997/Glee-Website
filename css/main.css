@@ -140,6 +140,10 @@ section {
     width: auto;
 }
 
+#sermon .video-info.flex {
+    flex-direction: column;
+}
+
 #promo-video.flex {
     align-items: center;
     position: relative;
@@ -212,7 +216,7 @@ section {
     z-index: 1;
 }
 
-.event-background button {
+.event-background a.button-white {
     width: 60%;
     position: absolute;
     bottom: 0;
@@ -273,8 +277,17 @@ section {
         width: 45%;
     }
 
+    .sermon-gallery .sermon-video.flex {
+        align-content: unset;
+    }
+
     .sermon-gallery.flex {
         justify-content: space-around;
+    }
+
+    #sermon .video-info.flex {
+        align-items: flex-start;
+        text-align: left;
     }
 
     #cards,
@@ -373,7 +386,6 @@ section {
     .sermon-gallery .sermon-video {
         width: 30%;
     }
-
     #cards {
         max-width: 1000px;
     }
@@ -410,6 +422,13 @@ section {
 
     #cards a {
         margin-bottom: 0;
+    }
+
+    .event-background a.button-white {
+        width: 40%;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
     }
 
 }

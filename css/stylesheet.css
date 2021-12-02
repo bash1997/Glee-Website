@@ -4,28 +4,28 @@
 
 @font-face {
     font-family: 'Catamaran';
-    src: url('../Fonts/Catamaran/Catamaran-VariableFont_wght.ttf');
+    src: url('../fonts/Catamaran/Catamaran-VariableFont_wght.ttf');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../Fonts/Lato/Lato-Regular.ttf');
+    src: url('../fonts/Lato/Lato-Regular.ttf');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Lato-Light';
-    src: url('../Fonts/Lato/Lato-Light.ttf');
+    src: url('../fonts/Lato/Lato-Light.ttf');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Silvertone';
-    src: url('../Fonts/silvertone/Silvertone.ttf');
+    src: url('../fonts/silvertone/Silvertone.ttf');
     font-style: normal;
     font-weight: normal;
 }
@@ -33,6 +33,18 @@
 /* ---------------------------------------- */
 /* FONT CLASSES */
 /* ---------------------------------------- */
+.catamaran {
+    font-family: Catamaran;
+}
+
+.lato {
+    font-family: Lato;
+}
+
+.lato-light {
+    font-family: Lato-Light;
+}
+
 .silvertone {
     font-family: Silvertone;
 }

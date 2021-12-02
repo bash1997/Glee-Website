@@ -13,8 +13,14 @@ section {
     margin-bottom: 2rem;
 }
 
+#lastest,
+#banner {
+    background: rgb(246, 87, 34);
+    color: #fff;
+}
+
 #lastest {
-    width: 1000%;
+    width: 100%;
     margin-top: 1rem;
 }
 
@@ -45,11 +51,6 @@ section {
 #service-info address,
 #service-info p {
     font-size: 1.25rem;
-}
-
-#banner {
-    background: rgb(246, 87, 34);
-    color: #fff;
 }
 
 .directions {
@@ -84,7 +85,8 @@ section {
 }
 
 #popular video,
-#promo {
+#promo,
+#promo video {
     box-shadow: 0 0 20px 0 rgb(246, 87, 34);
     border-radius: 15px;
 }
@@ -123,6 +125,7 @@ section {
 
 .video-info.flex {
     justify-content: space-between;
+    align-items: center;
 }
 
 .video-info {
@@ -177,9 +180,51 @@ section {
     font-weight: 400;
 } */
 
-#events {}
+/* #event {
+    position: relative;
+} */
+
+.event-background {
+    background-image: url("../img/eventbackground.png");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 5rem 0;
+}
+
+.event-background .flex {
+    justify-self: end;
+}
+
+.event-overlay {
+    background: rgba(0, 0, 0, 0.411);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+
+.event-background img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.event-background button {
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
 
 @media only screen and (min-width: 600px) {
+    #feat-video,
+    #promo-video {
+        width: 90%;
+        margin: 0 auto;
+    }
     #message-info.flex {
         justify-content: space-around;
     }
@@ -281,6 +326,10 @@ section {
 
     #cards .card-info .button-orange {
         height: 3rem;
+    }
+
+    .event-background {
+        padding: 3.2rem 0;
     }
 
 }

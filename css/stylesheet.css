@@ -31,6 +31,13 @@
 }
 
 /* ---------------------------------------- */
+/* FONT CLASSES */
+/* ---------------------------------------- */
+.silvertone {
+    font-family: Silvertone;
+}
+
+/* ---------------------------------------- */
 /* BASIC SETUP */
 /* ---------------------------------------- */
 
@@ -337,7 +344,6 @@ footer aside h6 {
 
 .orange-block {
     background-color: #f65722;
-    padding: 100px;
     color: white;
     text-align: center;
 }
@@ -346,14 +352,12 @@ footer aside h6 {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    padding: 100px;
     color: white;
     text-align: center;
 }
 
 .norm-block {
     text-align: center;
-    padding: 100px;
     width: 100%;
 }
 

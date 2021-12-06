@@ -254,8 +254,8 @@ class ConnectionCard extends React.Component{
             <div className='connectCard'>
                 {display}
                 <br></br>
-                <button className='button-white' onClick={this.handleShowClick}>Show Card</button>
-                <button className='button-white' onClick={this.handleHideClick}>Hide Card</button> 
+                <button className='button-orange' onClick={this.handleShowClick}>Show Card</button>
+                <button className='button-orange' onClick={this.handleHideClick}>Hide Card</button> 
             </div>
         )
         

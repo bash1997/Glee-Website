@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Values</title>
+    <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="./css/about.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="testFlex">
+        <!-- Logo -->
+        <a id="gleeLogo" href="../index.html"><img src="./img/icons/logo.png" alt="Glee logo"></a>
+
+        <!-- Mobile/Tablet Menu Button -->
+        <div class="menuButton">
+            <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Links -->
+        <div class="header" id="menuLinks">
+            <a class="link" href="./about/about.html">About</a>
+            <a class="link" href="../Connect Page/Code/Connect.html">Connect</a>
+            <a href="../sermon/sermon.html">Sermons</a>
+            <a href="https://pushpay.com/g/gleechurch">Give</a>
+        </div>
+    </div>
+
+    <!-- Value Goes Here -->
+    <div class="value-display" id="display">
+        <h2 id="selected-value">Our Values</h3>
+        <h3 id="value-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+        
+        <!-- Select Church Value Here -->
+        <div class="bullet-select">
+            <div class="slidingBoxes">
+                <button class="button-orange" id="partnerships" onclick="partnershipsClick()">Partnerships</button>
+                <button class="button-orange" id="creativity" onclick="creativityClick()">​Creativity</button>
+                <button class="button-orange" id="generosity" onclick="generosityClick()">Generosity</button>
+                <button class="button-orange" id="excellence" onclick="excellenceClick()">Excellence</button>
+                <button class="button-orange" id="friendliness" onclick="friendlinessClick()">​Friendliness</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/values.js" defer></script>
+    <script src="./js/header.js" defer></script>
+</body>
+
+</html>

@@ -13,8 +13,14 @@ section {
     margin-bottom: 2rem;
 }
 
+#lastest,
+#banner {
+    background: rgb(246, 87, 34);
+    color: #fff;
+}
+
 #lastest {
-    width: 1000%;
+    width: 100%;
     margin-top: 1rem;
 }
 
@@ -28,6 +34,7 @@ section {
 
 #message-info h5 {
     margin: .75rem 0;
+    width: 95%;
 }
 
 /* .lastest-message.flex,
@@ -46,24 +53,20 @@ section {
     font-size: 1.25rem;
 }
 
-#banner {
-    background: rgb(246, 87, 34);
-    color: #fff;
-}
-
 .directions {
     width: 100%;
 }
 
 .directions iframe {
-    width: 100%;
+    width: 90%;
     height: 70vw;
     margin: 2em 0;
+    border-radius: 15px;
 }
 
 .app-graphic {
     background: url("../img/mobile-app.png") no-repeat center;
-    background-size: 100% auto;
+    background-size: auto 100%;
     height: 42vh;
 }
 
@@ -82,8 +85,10 @@ section {
 }
 
 #popular video,
-#promo {
+#promo,
+#promo video {
     box-shadow: 0 0 20px 0 rgb(246, 87, 34);
+    border-radius: 15px;
 }
 
 #cards {
@@ -120,6 +125,11 @@ section {
 
 .video-info.flex {
     justify-content: space-between;
+    align-items: center;
+}
+
+.video-info {
+    margin-top: .5rem;
 }
 
 .video-info h5 {
@@ -128,6 +138,10 @@ section {
 
 .video-info h6 {
     width: auto;
+}
+
+#sermon .video-info.flex {
+    flex-direction: column;
 }
 
 #promo-video.flex {
@@ -170,15 +184,57 @@ section {
     font-weight: 400;
 } */
 
-#events {}
+/* #event {
+    position: relative;
+} */
+
+.event-background {
+    background-image: url("../img/eventbackground.png");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 5rem 0;
+}
+
+.event-background .flex {
+    justify-self: end;
+}
+
+.event-overlay {
+    background: rgba(0, 0, 0, 0.411);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+
+.event-background img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.event-background a.button-white {
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
 
 @media only screen and (min-width: 600px) {
+    #feat-video,
+    #promo-video {
+        width: 90%;
+        margin: 0 auto;
+    }
     #message-info.flex {
         justify-content: space-around;
     }
 
-    #message-info h5 {
-        width: 100%;
+    #message-info h5 span.feat-series {
+        display: block;
     }
 
     #message-info .button-orange {
@@ -188,16 +244,11 @@ section {
     .address-info,
     .directions {
         width: 50%;
-        /* align-content: flex-end; */
     }
 
     .address-info .direct-button {
         display: flex;
     }
-
-    /* .directions .direct-button {
-        display: none;
-    } */
 
     .directions iframe {
         height: 35vw;
@@ -205,25 +256,38 @@ section {
         margin-top: 1em;
     }
 
+    #app-graphic.flex {
+        align-items: center;
+    }
+
     .app-graphic {
         min-height: 430px;
-        background: url("../img/banner.jpg") no-repeat center;
         background-size: 100% auto;
+        width: 60%;
+        position: relative;
     }
 
     #app-graphic a {
-        /* position: absolute;
-        bottom: -100px;
-        right: 10%;
-        width: 30%; */
+        position: absolute;
+        width: 30%;
+        z-index: 1;
     }
 
     .sermon-gallery .sermon-video {
         width: 45%;
     }
 
+    .sermon-gallery .sermon-video.flex {
+        align-content: unset;
+    }
+
     .sermon-gallery.flex {
         justify-content: space-around;
+    }
+
+    #sermon .video-info.flex {
+        align-items: flex-start;
+        text-align: left;
     }
 
     #cards,
@@ -238,6 +302,7 @@ section {
 
     #cards .connection {
         width: 45%;
+        position: relative;
     }
 
     #cards .connection.flex,
@@ -248,25 +313,86 @@ section {
         justify-content: space-between;
     }
 
+    .img-overlay {
+        background: rgb(255, 255, 255, .75);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        border-radius: 15px;
+    }
+
     .connection img {
-        position: relative;
+        border-radius: 15px;
     }
 
     #cards div.card-info {
         position: absolute;
-        background: rgb(255, 255, 255, .75);
-        width: 45vw;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    #cards .card-info .button-orange {
+        height: 3rem;
+    }
+
+    .event-background {
+        padding: 3.2rem 0;
     }
 
 }
 
 @media only screen and (min-width: 800px) {
+    #service-info {
+        width: calc((100% / 3) * 2);
+    }
+
+    #service-info .address-info,
+    #service-info .directions {
+        margin-top: 0;
+    }
+
+    .address-info {
+        order: 1;
+    }
+
+    .directions {
+        order: 0;
+    }
+
+    .directions iframe {
+        height: 20rem;
+        margin: 0;
+    }
+
+    #app-graphic {
+        width: 33%;
+    }
+
+    .app-graphic {
+        width: 100%;
+        height: 100%;
+    }
+
+    #app-graphic .button-orange {
+        width: 20%;
+    }
+
     .sermon-gallery .sermon-video {
         width: 30%;
+    }
+    #cards {
+        max-width: 1000px;
     }
 
     #cards .connection {
         width: 35%;
+        position: unset;
     }
 
     #cards .connection.flex,
@@ -277,21 +403,32 @@ section {
         justify-content: space-between;
     }
 
+    .img-overlay {
+        display: none;
+    }
+
     .card-info.flex {
         justify-content: space-between;
     }
 
-    .connection img {
+    #cards div.card-info {
         position: unset;
     }
 
-    #cards div.card-info {
-        position: unset;
-        width: 45vw;
+    .card-info p {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #cards a {
         margin-bottom: 0;
+    }
+
+    .event-background a.button-white {
+        width: 40%;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
     }
 
 }

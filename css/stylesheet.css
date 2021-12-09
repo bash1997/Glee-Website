@@ -4,30 +4,49 @@
 
 @font-face {
     font-family: 'Catamaran';
-    src: url('../Fonts/Catamaran/Catamaran-VariableFont_wght.ttf');
+    src: url('../fonts/Catamaran/Catamaran-VariableFont_wght.ttf');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../Fonts/Lato/Lato-Regular.ttf');
+    src: url('../fonts/Lato/Lato-Regular.ttf');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Lato-Light';
-    src: url('../Fonts/Lato/Lato-Light.ttf');
+    src: url('../fonts/Lato/Lato-Light.ttf');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Silvertone';
-    src: url('../Fonts/silvertone/Silvertone.ttf');
+    src: url('../fonts/silvertone/Silvertone.ttf');
     font-style: normal;
     font-weight: normal;
+}
+
+/* ---------------------------------------- */
+/* FONT CLASSES */
+/* ---------------------------------------- */
+.catamaran {
+    font-family: Catamaran;
+}
+
+.lato {
+    font-family: Lato;
+}
+
+.lato-light {
+    font-family: Lato-Light;
+}
+
+.silvertone {
+    font-family: Silvertone;
 }
 
 /* ---------------------------------------- */
@@ -93,7 +112,7 @@ button, button a {
 }
 
 p {
-    font: 1rem;
+    font-size: 1rem;
 }
 
 i,
@@ -266,6 +285,14 @@ footer section {
     justify-content: space-around;
 }
 
+.social a {
+    min-width: 48px;
+    min-height: 48px;
+    width: 20%;
+    text-decoration: none;
+    color: unset;
+}
+
 .contact {
     font-style: normal;
     width: 100%;
@@ -329,7 +356,6 @@ footer aside h6 {
 
 .orange-block {
     background-color: #f65722;
-    padding: 100px;
     color: white;
     text-align: center;
 }
@@ -338,14 +364,12 @@ footer aside h6 {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    padding: 100px;
     color: white;
     text-align: center;
 }
 
 .norm-block {
     text-align: center;
-    padding: 100px;
     width: 100%;
 }
 

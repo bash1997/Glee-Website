@@ -13,49 +13,49 @@ class Leader {
 
 const gleeLeaders = [
     {
-        image: "../about/img/leaders/pastor.jpeg",
+        image: "../about/img/leaders/pastor.jpg",
         title :"Lead Pastor",
         name: "Pastor Lorenzo",
         info: "Lorenzo Moseley, Jr. is the Lead Pastor of Glee Church in Bowie, Maryland. He is a native of the Washington, DC Metropolitan area. He is passionate about seeing people operate in their authentic gifting."
     },
     {
-        image: "../about/img/leaders/kevin.jpeg",
+        image: "../about/img/leaders/kevin.jpg",
         title: "Executive Assistant to Lead Pastor",
         name: "Kevin Guzman",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam tempor. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a."
     },
     {
-        image: "../about/img/leaders/phyliseccea.jpeg",
+        image: "../about/img/leaders/phylisecca.png",
         title: "Connections Pastor",
         name: "Phyliseccea Owens",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam tempor. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a."
     },
     {
-        image: "../about/img/leaders/courtney.png",
+        image: "../about/img/leaders/courtney.jpg",
         title: "Worship Pastor",
         name: "Courtney Thorpe",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam tempor. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a."
     },
     {
-        image: "../about/img/leaders/luis.jpeg",
+        image: "../about/img/leaders/luis.jpg",
         title: "Band Leader",
         name: "Luis Cabrera",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam tempor. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a."
     },
     {
-        image: "../about/img/leaders/kaylin.jpeg",
+        image: "../about/img/leaders/kaylin.jpg",
         title: "Creative Arts Pastor",
         name: "Kaylin Smith",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam tempor. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a."
     },
     {
-        image: "../about/img/leaders/deontrae.jpeg",
+        image: "../about/img/leaders/deontrae.jpg",
         title: "Communications Leader",
         name: "Deontrae Callaham",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam tempor. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a."
     },
     {
-        image: "../about/img/leaders/trinity.jpeg",
+        image: "../about/img/leaders/trinity.jpg",
         title: "Production Leader",
         name: "Trinity Coleman",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam tempor. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a."
@@ -122,8 +122,7 @@ function indexCheck() {
 // Swap out current leader info from the array
 function getLeaderInfo() {
 
-    //createIcon.src = leadersArray[index].icon;
-    createIcon.src = "./img/icons/profile.png";
+    createIcon.src = leadersArray[index].icon;
     createIcon.alt = leadersArray[index].name;
     ledIcon.append(createIcon);
     ledTitle.innerText = leadersArray[index].title;

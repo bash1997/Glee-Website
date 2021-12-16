@@ -1,0 +1,85 @@
+.highlight {
+    margin-bottom: 2rem;
+}
+
+#selected-belief {
+    width: 100%;
+}
+
+#belief-info {
+    width: 90%;
+}
+
+.bullet-select.flex {
+    display: none;
+}
+
+.bullet-select button:hover,
+.bullet-select button:focus {
+  color: #fff;
+  background: #ffde59;
+}
+
+@media only screen and (min-width: 600px) {
+    #belief-menu {
+        width: 40%;
+    }
+
+    .bullet-select.flex {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .orange-block {
+        padding-bottom: 1rem;
+    }
+
+    .belief-display.flex {
+        justify-content: space-around;
+    }
+    
+    .highlight {
+        width: 50%;
+        height: 50vh;
+    }
+    
+    .highlight.flex {
+        align-content: center;
+    }
+
+    #belief-menu {
+        display: none;
+    }
+
+    .bullet-select {
+        width: 40%;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        height: 50vh;
+    }
+
+    .bullet-select.flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .bullet-select::-webkit-scrollbar {
+        background: #ffde5900;
+        border-radius: 15px;
+    }
+
+    .bullet-select::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 15px;
+    }
+    
+    .bullet-select button {
+        width: 70%;
+    }
+}
+

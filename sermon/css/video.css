@@ -21,7 +21,6 @@ video {
 }
 
 .video-info.flex {
-  /* justify-content: space-evenly; */
   flex-flow: column nowrap;
 }
 
@@ -103,7 +102,7 @@ video {
 .sermon-video video {
   border-radius: 15px;
   width: 40%;
-  /* height: fit-content; */
+  height: fit-content;
 }
 
 .sermon-video .video-info {

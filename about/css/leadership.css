@@ -8,22 +8,18 @@ section {
     margin-bottom: 2rem;
 }
 
-.leader-display {
+.silvertone {
+    font-size: 50px;
     width: 100%;
-    max-width: 800px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+    text-align: center;
 }
 
-.slidingBoxes {
+.leader-display {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
 
 .leader-image {
@@ -50,7 +46,6 @@ section {
 .leader-text h3 {
     color: white;
     background: rgb(246, 87, 34);
-    /* font-weight: 800; */
     margin: 0;
 }
 
@@ -62,8 +57,6 @@ section {
 #leader-bio,
 .leader-text p {
     color: #555;
-    /* font-weight: 500; */
-    /* line-height: 2; */
     padding-top: 0;
 }
 
@@ -71,7 +64,6 @@ section {
     width: 100%;
     margin: 0;
     padding: 10px 0;
-    background: rgb(246, 87, 34);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -99,16 +91,10 @@ section {
     display: none;
 }
 
-@media only screen and (min-width: 700px) {
-    .leader-display,
-    .slidingBoxes {
+@media only screen and (min-width: 600px) {
+    .leader-display {
         flex-flow: row wrap;
-    }
-
-    .slidingBoxes {
-        margin-bottom: 30px;
         justify-content: space-around;
-        align-items: flex-start;
     }
 
     .leader-image,
@@ -129,6 +115,7 @@ section {
     .leader-text h3 {
         color: rgb(246, 87, 34);
         background: none;
+        text-shadow: 0px 0px 20px rgb(246 87 34);
     }
 
     .icon-list {
@@ -139,14 +126,21 @@ section {
         flex-flow: row wrap;
         overflow-x: auto;
     }
-
-    /* .icon-list::-webkit-scrollbar {} */
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
+    .orange-block {
+        padding: 1.4rem 0;
+    }
+
+    .silvertone {
+        width: auto;
+        padding-right: 5px;
+    }
+
     .leader-display {
-        margin: 0 auto;
         max-width: 1000px;
+        padding: 2.5rem 0;
     }
 
     .leader-image img {

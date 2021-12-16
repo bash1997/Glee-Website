@@ -90,17 +90,17 @@ h2 {
 }
 h3 {
     font-family: 'Catamaran';
-    font-size: 1.602rem; 
+    font-size: 1.602rem;
  }
 
 h4 {
     font-family: 'Catamaran';
-    font-size: 1.424rem; 
+    font-size: 1.424rem;
  }
 
 h5 {
     font-family: 'Catamaran';
-    font-size: 1.266rem; 
+    font-size: 1.266rem;
  }
 
 h6,
@@ -108,7 +108,7 @@ a,
 address,
 button, button a {
     font-family: 'Catamaran';
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
 }
 
 p {
@@ -133,24 +133,18 @@ i {
 }
 
 .fab,
-.fas {
+.fas,
+.fa {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 /* ---------------------------------------- */
 /* HEADER & FOOTER */
 /* ---------------------------------------- */
-
-/* header {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-evenly;
-} */
 
 .testFlex a {
     text-decoration: none;
@@ -165,7 +159,7 @@ i {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+
 }
 
 .menuButton{
@@ -173,8 +167,8 @@ i {
     justify-content: center;
     align-items: center;
     min-width: 48px;
-    min-height: 48px; 
-    width: 33%;   
+    min-height: 48px;
+    width: 33%;
 }
 
 .testFlex{
@@ -188,7 +182,6 @@ i {
     width: 100%;
     z-index: 1000;
     flex-wrap: wrap;
-    /* display: none; */
 }
 
 a#gleeLogo {
@@ -214,6 +207,7 @@ a#gleeLogo {
     align-content: center;
     padding: 10px 0;
     box-shadow: 0px 0px 7px;
+    z-index: 1000;
 }
 
 #bottom-contact .fab,
@@ -245,7 +239,6 @@ a#gleeLogo {
 
 footer {
     text-align: left;
-    /* font-family: 'Catamaran'; */
     font-size: 18px;
 }
 
@@ -366,6 +359,7 @@ footer aside h6 {
     background-position: center;
     color: white;
     text-align: center;
+    padding: 2rem 0;
 }
 
 .norm-block {
@@ -386,6 +380,7 @@ a:hover.gleeBtn{
 
 .button-orange,
 .button-white,
+.button-yellow,
 button {
 
     text-decoration: none;
@@ -417,41 +412,44 @@ button {
     background: #fff;
 }
 
-/* ---------------------------------------- */
-/* SLIDING BOXES */
-/* ---------------------------------------- */
-
-.slidingBoxes{
-    display: flex;
-    justify-content: space-evenly;
-    border: 1px none;
+.button-yellow {
+    color: #fff;
+    background: #ffde59;
 }
 
 /* ---------------------------------------- */
-/* IMAGES */
+/* SLIDING BOXES */
 /* ---------------------------------------- */
+.slidingBoxes {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-/*
+/* ---------------------------------------- */
+/* MEDIA */
+/* ---------------------------------------- */
 img {
-    height: 300px;
-    border-radius: 50%;
-    margin-left: 10px;
-    vertical-align: middle;
-}*/
+  height: 100px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+video {
+    width: 100%;
+    border-radius: 15px;
+    max-width: 1000px;
+}
 
 /* ---------------------------------------- */
 /* MAIN */
 /* ---------------------------------------- */
 
 main {
-    top:auto;
+    top: auto;
 }
 
 
 @media only screen and (min-width: 426px) {
-    /* header */
-    
-    /* menu */
     #menuLinks {
         flex-flow: row nowrap;
         justify-content: space-around;
@@ -471,14 +469,13 @@ main {
         width: 5%;
         padding-left: 25px;
     }
-    
+
     /* footer */
     #bottom-contact {
         display: none;
     }
 
     footer.flex {
-        /* flex-direction: column; */
         align-items: flex-start;
     }
 
@@ -507,7 +504,7 @@ main {
     }
 
     .contact.flex {
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-direction: column;
     }
 
@@ -525,13 +522,17 @@ main {
         display: none;
     }
 
+    .contact a,
+    .contact p {
+        min-height: 48px;
+    }
+
     .sundays {
         width: 45%;
         text-align: center;
     }
 
     footer aside {
-        /* max-width: 600px; */
         width: 100%;
     }
 
@@ -546,9 +547,6 @@ main {
 
     #footer-about {
         display: unset;
-    }
-
-    footer .copyright {
     }
 }
 
@@ -585,7 +583,6 @@ main {
 
     footer aside {
         width: 60%;
-        /* height: 352px; */
     }
 
     footer section.flex {

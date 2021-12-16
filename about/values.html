@@ -5,55 +5,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../logo192.png">
     <title>Values</title>
-    <link href="../css/stylesheet.css" rel="stylesheet">
-    <link href="./css/about.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="./css/about.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/value.css">
 </head>
 
 <body>
-    <!-- Navbar -->
     <div class="testFlex">
-        <!-- Logo -->
-        <a id="gleeLogo" href="../index.html"><img src="./img/icons/logo.png" alt="Glee logo"></a>
-
-        <!-- Mobile/Tablet Menu Button -->
+        <a id="gleeLogo" href="../index.html"><img src="../img/logo.png" alt="Glee logo"></a>
         <div class="menuButton">
             <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-
-        <!-- Links -->
         <div class="header" id="menuLinks">
-            <a class="link" href="./about/about.html">About</a>
-            <a class="link" href="../Connect Page/Code/Connect.html">Connect</a>
+            <a href="../about/about.html">About</a>
+            <a href="../connect/connection.html">Connect</a>
             <a href="../sermon/sermon.html">Sermons</a>
-            <a href="https://pushpay.com/g/gleechurch">Give</a>
+            <a href="">Give</a>
         </div>
     </div>
 
     <!-- Value Goes Here -->
-    <div class="value-display" id="display">
-        <h2 id="selected-value">Our Values</h3>
-        <h3 id="value-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
-        
-        <!-- Select Church Value Here -->
-        <div class="bullet-select">
-            <div class="slidingBoxes">
-                <button class="button-orange" id="partnerships" onclick="partnershipsClick()">Partnerships</button>
-                <button class="button-orange" id="creativity" onclick="creativityClick()">​Creativity</button>
-                <button class="button-orange" id="generosity" onclick="generosityClick()">Generosity</button>
-                <button class="button-orange" id="excellence" onclick="excellenceClick()">Excellence</button>
-                <button class="button-orange" id="friendliness" onclick="friendlinessClick()">​Friendliness</button>
+    <div class="value-display orange-block flex" id="display">
+        <h2 id="selected-value">Our Values</h2>
+            <h5 id="value-info"></h5>
+
+            <button id="value-menu" class="button-white" onclick="menuToggle()">Check Out Our Core Values</button>
+
+            <!-- Select Church Value Here -->
+            <div class="bullet-select flex">
+                <button class="button-orange" id="partnerships" onclick="partnershipsClick(); menuToggle();">Partnerships</button>
+                <button class="button-orange" id="creativity" onclick="creativityClick(); menuToggle();">Creativity</button>
+                <button class="button-orange" id="generosity" onclick="generosityClick(); menuToggle();">Generosity</button>
+                <button class="button-orange" id="excellence" onclick="excellenceClick(); menuToggle();">Excellence</button>
+                <button class="button-orange" id="friendliness" onclick="friendlinessClick(); menuToggle();">Friendliness</button>
             </div>
-        </div>
     </div>
-    
+
+    <footer class="flex">
+        <div id="bio" class="bio flex">
+            <img src="../img/logo.png" alt="Glee logo">
+            <span id="bio-divider"></span>
+            <h6>At Glee Church, our mission is to share the love of Jesus Christ and to reach the unchurched.</h6>
+        </div>
+
+        <section class="flex">
+            <div class="social flex">
+                <a href="https://www.youtube.com/channel/UCXvu8K-9tCU_GB8mg0SKw1w" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://twitter.com/GleeChurch" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/GleeChurch/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/glee.church/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="church-info flex">
+                <address class="contact flex">
+                    <a href="mailto:hello@gleechurch.com">hello@gleechurch.com</a>
+                    <span> | </span>
+                    <p>301-887-5684</p>
+                </address>
+
+                <div class="sundays">
+                    <h6>Sundays 10:00 AM</h6>
+                    <p>Tulip Grove Elementary</p>
+                    <address>2909 Trainor Ln Bowie, MD 20715</address>
+                </div>
+            </div>
+        </section>
+
+        <aside class="flex">
+            <div id="footer-about">
+                <h6>about us</h6>
+                <ul>
+                    <li>
+                        <a href="./leadership.html">
+                            leaders
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./beliefs.html">
+                            beliefs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./values.html">
+                            values
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="footer-connect">
+                <h6>connect</h6>
+                <ul>
+                    <li>
+                        <a href="volunteer">
+                            volunteer
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://gleechurch.bamboohr.com/jobs/" target="_blank">
+                            jobs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://gleechurch.churchcenter.com/registrations" target="_blank">
+                            events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="interns">
+                            internships
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="footer-more">
+                <h6>more</h6>
+                <ul>
+                    <li>
+                        <a href="https://gleechurch.churchcenter.com/people/forms/93032" target="_blank">
+                            contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://pushpay.com/g/gleechurch" target="_blank">
+                            give
+                        </a>
+                    </li>
+
+                    <li>shop - coming soon</li>
+                    <li>
+                        <a href="https://www.arcchurches.com/" target="_blank">
+                            ARC Churches
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <div class="copyright">
+            <h6> &copy; 2021 Glee Church - Maryland</h6>
+        </div>
+    </footer>
+
     <script src="./js/values.js" defer></script>
-    <script src="./js/header.js" defer></script>
+    <script src="./js/script.js" defer></script>
 </body>
 
 </html>

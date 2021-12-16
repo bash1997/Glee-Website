@@ -1,0 +1,651 @@
+/* ---------------------------------------- */
+/* FONTS */
+/* ---------------------------------------- */
+
+@font-face {
+    font-family: 'Catamaran';
+    src: url('../fonts/Catamaran/Catamaran-VariableFont_wght.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../fonts/Lato/Lato-Light.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Silvertone';
+    src: url('../fonts/silvertone/Silvertone.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* ---------------------------------------- */
+/* FONT CLASSES */
+/* ---------------------------------------- */
+.catamaran {
+    font-family: Catamaran;
+}
+
+.lato {
+    font-family: Lato;
+}
+
+.lato-light {
+    font-family: Lato-Light;
+}
+
+.silvertone {
+    font-family: Silvertone;
+}
+
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* ---------------------------------------- */
+/* HEADINGS */
+/* ---------------------------------------- */
+
+h1 {
+    font-family: 'Catamaran';
+    font-weight: 900px;
+    font-size: 75px;
+}
+
+h2 {
+    font-family: 'Catamaran';
+    font-weight: 100px;
+    font-size: 50px;
+}
+h3 {
+    font-family: 'Catamaran';
+    font-size: 1.602rem;
+ }
+
+h4 {
+    font-family: 'Catamaran';
+    font-size: 1.424rem;
+ }
+
+h5 {
+    font-family: 'Catamaran';
+    font-size: 1.266rem;
+ }
+
+h6,
+a,
+address,
+button, button a {
+    font-family: 'Catamaran';
+    font-size: 1.125rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+i,
+button {
+    min-width: 48px;
+    min-height: 48px;
+}
+
+i {
+    font-size: 2rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+}
+
+.fab,
+.fas,
+.fa {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* ---------------------------------------- */
+/* HEADER & FOOTER */
+/* ---------------------------------------- */
+
+.testFlex a {
+    text-decoration: none;
+    color: rgb(246, 87, 34);
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+}
+
+#menuLinks{
+    display: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.menuButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 48px;
+    min-height: 48px;
+    width: 33%;
+}
+
+.testFlex{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+a#gleeLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: auto;
+}
+
+#gleeLogo img {
+    width: 100%;
+    height: auto;
+}
+
+#bottom-contact {
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 10px 0;
+    box-shadow: 0px 0px 7px;
+    z-index: 1000;
+}
+
+#bottom-contact .fab,
+#bottom-contact .fas {
+    flex-flow: column wrap;
+    width: 70px;
+}
+
+.fa-phone-alt {
+    color: #63c855;
+}
+
+.fa-envelope {
+    color: #be1767;
+}
+
+.fa-facebook-square {
+    color: #3b5a98;
+}
+
+#bottom-contact span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+    font-family: 'Lato-Light';
+}
+
+/* FOOTER */
+
+footer {
+    text-align: left;
+    font-size: 18px;
+}
+
+footer div {
+    margin-bottom: 1rem;
+}
+
+footer h6 {
+    font-weight: 400;
+}
+
+footer section {
+    margin-bottom: 0;
+}
+
+.bio {
+    border-bottom: #555 solid 1.25px;
+    padding-bottom: 2.5rem;
+    text-align: left;
+    width: 90%;
+    height: auto;
+}
+
+.bio img {
+    width: 20%;
+}
+
+.bio span {
+    display: none;
+}
+
+.bio h6 {
+    font-size: 1rem;
+}
+
+.social.flex {
+    justify-content: space-around;
+}
+
+.social a {
+    min-width: 48px;
+    min-height: 48px;
+    width: 20%;
+    text-decoration: none;
+    color: unset;
+}
+
+.contact {
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contact.flex {
+    justify-content: space-around;
+}
+
+.contact a {
+    color: #555;
+    text-decoration: none;
+}
+
+.sundays {
+    text-align: left;
+    width: 90%;
+}
+
+.copyright {
+    text-align: left;
+    width: 90%;
+}
+
+.church-info {
+    margin-bottom: 0;
+}
+
+footer aside {
+    width: 100%;
+}
+
+footer aside.flex {
+    justify-content: center;
+}
+
+footer aside div {
+    text-align: left;
+    width: 45%;
+}
+
+footer aside h6 {
+    font-weight: 700;
+}
+
+#footer-about {
+    display: none;
+}
+
+#footer-about a,
+#footer-connect a,
+#footer-more a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ---------------------------------------- */
+/* DIV BLOCKS */
+/* ---------------------------------------- */
+
+.orange-block {
+    background-color: #f65722;
+    color: white;
+    text-align: center;
+}
+
+.pic-block {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.norm-block {
+    text-align: center;
+    width: 100%;
+}
+
+/* ---------------------------------------- */
+/* BUTTONS */
+/* ---------------------------------------- */
+
+a.gleeBtn{
+    color:white;
+}
+a:hover.gleeBtn{
+    color: black;
+}
+
+.button-orange,
+.button-white,
+.button-yellow,
+button {
+
+    text-decoration: none;
+    padding: .95rem .75rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    font-family: 'Catamaran';
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .75rem;
+    width: 70%;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+}
+
+.button-orange, button a{
+    background: rgb(246, 87, 34);
+    color: #fff;
+}
+
+.button-white {
+    color: rgb(246, 87, 34);
+    background: #fff;
+}
+
+.button-yellow {
+    color: #fff;
+    background: #ffde59;
+}
+
+/* ---------------------------------------- */
+/* SLIDING BOXES */
+/* ---------------------------------------- */
+.slidingBoxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* ---------------------------------------- */
+/* MEDIA */
+/* ---------------------------------------- */
+img {
+  height: 100px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+video {
+    width: 100%;
+    border-radius: 15px;
+    max-width: 1000px;
+}
+
+/* ---------------------------------------- */
+/* MAIN */
+/* ---------------------------------------- */
+
+main {
+    top: auto;
+}
+
+
+@media only screen and (min-width: 426px) {
+    #menuLinks {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    a#gleeLogo {
+        width: 20%;
+    }
+
+    .testFlex {
+        justify-content: center;
+    }
+
+    .menuButton {
+        width: 5%;
+        padding-left: 25px;
+    }
+
+    /* footer */
+    #bottom-contact {
+        display: none;
+    }
+
+    footer.flex {
+        align-items: flex-start;
+    }
+
+    .bio.flex {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bio img {
+        width: 15%;
+    }
+
+    .bio span {
+        display: unset;
+        width: 0;
+        border-left: grey solid .5px;
+    }
+
+    .bio h6 {
+        width: 75%;
+    }
+
+    .church-info {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact.flex {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .sundays.flex {
+        justify-content: space-around;
+    }
+
+    .contact {
+        width: 45%;
+        text-align: center;
+        order: 1;
+    }
+
+    .contact span {
+        display: none;
+    }
+
+    .contact a,
+    .contact p {
+        min-height: 48px;
+    }
+
+    .sundays {
+        width: 45%;
+        text-align: center;
+    }
+
+    footer aside {
+        width: 100%;
+    }
+
+    footer aside.flex {
+        justify-content: flex-end;
+    }
+
+    footer aside div {
+        width: 33%;
+        text-align: center;
+    }
+
+    #footer-about {
+        display: unset;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 18px;
+    }
+
+    a#gleeLogo {
+        width: 8%;
+    }
+
+    .menuButton {
+        display: none;
+    }
+
+    #menuLinks {
+        width: 80%;
+        display: flex;
+    }
+
+    footer.flex {
+        justify-content: space-evenly;
+    }
+
+    footer h6,
+    footer a {
+        font-size: 1rem;
+    }
+
+    footer section {
+        width: 27%;
+    }
+
+    footer aside {
+        width: 60%;
+    }
+
+    footer section.flex {
+        align-content: space-between;
+    }
+
+    footer section div,
+    .contact,
+    .sundays {
+        width: 100%;
+        order: unset;
+    }
+
+    .bio img {
+        width: 7%;
+    }
+
+    .bio h6 {
+        width: 90%;
+    }
+
+
+    .social.flex {
+        justify-content: space-between;
+    }
+
+    .church-info {
+        height: 80%;
+    }
+
+    .church-info.flex {
+        align-content: space-evenly;
+    }
+
+    .contact.flex {
+        flex-direction: row;
+    }
+
+    .contact {
+        color: rgb(246, 87, 34);
+    }
+
+    .contact a {
+        color: rgb(246, 87, 34);
+    }
+
+    .contact span {
+        display: unset;
+        color: #555;
+    }
+
+    .sundays {
+        text-align: left;
+        max-width: unset;
+    }
+
+    footer aside.flex {
+        justify-content: flex-start;
+    }
+
+    footer aside div {
+        text-align: left;
+        width: 27%;
+    }
+
+}

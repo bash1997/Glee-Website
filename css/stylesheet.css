@@ -90,17 +90,17 @@ h2 {
 }
 h3 {
     font-family: 'Catamaran';
-    font-size: 1.602rem; 
+    font-size: 1.602rem;
  }
 
 h4 {
     font-family: 'Catamaran';
-    font-size: 1.424rem; 
+    font-size: 1.424rem;
  }
 
 h5 {
     font-family: 'Catamaran';
-    font-size: 1.266rem; 
+    font-size: 1.266rem;
  }
 
 h6,
@@ -108,7 +108,7 @@ a,
 address,
 button, button a {
     font-family: 'Catamaran';
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
 }
 
 p {
@@ -159,7 +159,7 @@ i {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+
 }
 
 .menuButton{
@@ -167,8 +167,8 @@ i {
     justify-content: center;
     align-items: center;
     min-width: 48px;
-    min-height: 48px; 
-    width: 33%;   
+    min-height: 48px;
+    width: 33%;
 }
 
 .testFlex{
@@ -418,8 +418,21 @@ button {
 }
 
 /* ---------------------------------------- */
+/* SLIDING BOXES */
+/* ---------------------------------------- */
+.slidingBoxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* ---------------------------------------- */
 /* MEDIA */
 /* ---------------------------------------- */
+img {
+  height: 100px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
 
 video {
     width: 100%;
@@ -456,7 +469,7 @@ main {
         width: 5%;
         padding-left: 25px;
     }
-    
+
     /* footer */
     #bottom-contact {
         display: none;

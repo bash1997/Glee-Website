@@ -1,32 +1,52 @@
 /* ---------------------------------------- */
 /* FONTS */
 /* ---------------------------------------- */
+
 @font-face {
-    font-family:proxima-nova, sans-serif;
-    src: url('../Fonts/Catamaran/Catamaran-VariableFont_wght.ttf');
+    font-family: 'Catamaran';
+    src: url('../fonts/Catamaran/Catamaran-VariableFont_wght.ttf');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../Fonts/Lato/Lato-Regular.ttf');
+    src: url('../fonts/Lato/Lato-Regular.ttf');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Lato-Light';
-    src: url('../Fonts/Lato/Lato-Light.ttf');
+    src: url('../fonts/Lato/Lato-Light.ttf');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Silvertone';
-    src: url('../Fonts/silvertone/Silvertone.ttf');
+    src: url('../fonts/silvertone/Silvertone.ttf');
     font-style: normal;
     font-weight: normal;
+}
+
+/* ---------------------------------------- */
+/* FONT CLASSES */
+/* ---------------------------------------- */
+.catamaran {
+    font-family: Catamaran;
+}
+
+.lato {
+    font-family: Lato;
+}
+
+.lato-light {
+    font-family: Lato-Light;
+}
+
+.silvertone {
+    font-family: Silvertone;
 }
 
 /* ---------------------------------------- */
@@ -42,7 +62,7 @@
 html {
     background-color: #fff;
     color: #555;
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Lato';
     font-weight: 300;
     font-size: 16px;
     text-rendering: optimizeLegibility;
@@ -56,29 +76,30 @@ li {
 /* ---------------------------------------- */
 /* HEADINGS */
 /* ---------------------------------------- */
+
 h1 {
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 900;
+    font-family: 'Catamaran';
+    font-weight: 900px;
+    font-size: 75px;
 }
 
 h2 {
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Catamaran';
     font-weight: 100px;
     font-size: 50px;
 }
 h3 {
-    font-family:proxima-nova, sans-serif;
+    font-family: 'Catamaran';
     font-size: 1.602rem; 
  }
 
 h4 {
-    font-family:proxima-nova, sans-serif;
+    font-family: 'Catamaran';
     font-size: 1.424rem; 
  }
 
 h5 {
-    font-family:proxima-nova, sans-serif;
+    font-family: 'Catamaran';
     font-size: 1.266rem; 
  }
 
@@ -86,12 +107,12 @@ h6,
 a,
 address,
 button, button a {
-    font-family:proxima-nova, sans-serif;
+    font-family: 'Catamaran';
     font-size: 1.125rem; 
 }
 
 p {
-    font: 1rem;
+    font-size: 1rem;
 }
 
 i,
@@ -112,29 +133,23 @@ i {
 }
 
 .fab,
-.fas {
+.fas,
+.fa {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 /* ---------------------------------------- */
 /* HEADER & FOOTER */
 /* ---------------------------------------- */
 
-/* header {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-evenly;
-} */
-
 .testFlex a {
     text-decoration: none;
     color: rgb(246, 87, 34);
-    font-family:proxima-nova, sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 24px;
 }
 
@@ -167,7 +182,6 @@ i {
     width: 100%;
     z-index: 1000;
     flex-wrap: wrap;
-    /* display: none; */
 }
 
 a#gleeLogo {
@@ -193,6 +207,7 @@ a#gleeLogo {
     align-content: center;
     padding: 10px 0;
     box-shadow: 0px 0px 7px;
+    z-index: 1000;
 }
 
 #bottom-contact .fab,
@@ -217,14 +232,13 @@ a#gleeLogo {
     font-size: 1rem;
     font-weight: 400;
     color: #555;
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Lato-Light';
 }
 
 /* FOOTER */
 
 footer {
     text-align: left;
-    /* font-family:proxima-nova, sans-serif; */
     font-size: 18px;
 }
 
@@ -262,6 +276,14 @@ footer section {
 
 .social.flex {
     justify-content: space-around;
+}
+
+.social a {
+    min-width: 48px;
+    min-height: 48px;
+    width: 20%;
+    text-decoration: none;
+    color: unset;
 }
 
 .contact {
@@ -327,7 +349,6 @@ footer aside h6 {
 
 .orange-block {
     background-color: #f65722;
-    padding: 100px;
     color: white;
     text-align: center;
 }
@@ -336,14 +357,13 @@ footer aside h6 {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    padding: 100px;
     color: white;
     text-align: center;
+    padding: 2rem 0;
 }
 
 .norm-block {
     text-align: center;
-    padding: 100px;
     width: 100%;
 }
 
@@ -360,15 +380,15 @@ a:hover.gleeBtn{
 
 .button-orange,
 .button-white,
+.button-yellow,
 button {
 
     text-decoration: none;
     padding: .95rem .75rem;
     min-width: 3rem;
     min-height: 3rem;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Catamaran';
+    font-weight: 700;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -392,41 +412,31 @@ button {
     background: #fff;
 }
 
-/* ---------------------------------------- */
-/* SLIDING BOXES */
-/* ---------------------------------------- */
-
-.slidingBoxes{
-    display: flex;
-    justify-content: space-evenly;
-    border: 1px none;
+.button-yellow {
+    color: #fff;
+    background: #ffde59;
 }
 
 /* ---------------------------------------- */
-/* IMAGES */
+/* MEDIA */
 /* ---------------------------------------- */
 
-/*
-img {
-    height: 300px;
-    border-radius: 50%;
-    margin-left: 10px;
-    vertical-align: middle;
-}*/
+video {
+    width: 100%;
+    border-radius: 15px;
+    max-width: 1000px;
+}
 
 /* ---------------------------------------- */
 /* MAIN */
 /* ---------------------------------------- */
 
 main {
-    top:auto;
+    top: auto;
 }
 
 
 @media only screen and (min-width: 426px) {
-    /* header */
-    
-    /* menu */
     #menuLinks {
         flex-flow: row nowrap;
         justify-content: space-around;
@@ -453,7 +463,6 @@ main {
     }
 
     footer.flex {
-        /* flex-direction: column; */
         align-items: flex-start;
     }
 
@@ -482,7 +491,7 @@ main {
     }
 
     .contact.flex {
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-direction: column;
     }
 
@@ -500,13 +509,17 @@ main {
         display: none;
     }
 
+    .contact a,
+    .contact p {
+        min-height: 48px;
+    }
+
     .sundays {
         width: 45%;
         text-align: center;
     }
 
     footer aside {
-        /* max-width: 600px; */
         width: 100%;
     }
 
@@ -521,9 +534,6 @@ main {
 
     #footer-about {
         display: unset;
-    }
-
-    footer .copyright {
     }
 }
 
@@ -560,7 +570,6 @@ main {
 
     footer aside {
         width: 60%;
-        /* height: 352px; */
     }
 
     footer section.flex {

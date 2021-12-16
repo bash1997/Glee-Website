@@ -1,0 +1,50 @@
+.value-display {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 75% 25%;
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.value-display h5 {
+  width: 90%;
+  margin: 0 auto 2rem;
+  font-weight: 100;
+}
+
+.bullet-select.flex {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .bullet-select.flex {
+        justify-content: space-around;
+    }
+
+    .bullet-select button {
+        margin-bottom: 1.125rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #value-menu {
+        display: none;
+    }
+
+    .bullet-select {
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .bullet-select.flex {
+        display: flex;
+    }
+    
+    .bullet-select button {
+        width: 30%;
+    }
+}

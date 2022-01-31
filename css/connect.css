@@ -9,6 +9,8 @@
 #message-container{
     max-height: 200px;
     overflow-y: scroll;
+    overflow-x: auto;
+    border: 10px dotted rgb(246, 87, 34)
 }
 
 /*react components*/
@@ -35,9 +37,12 @@
     justify-content: center;
 }
 
-
-
-
+.norm-block,
+.orange-block {
+    text-align: center;
+    width: 100%;
+    padding: 100px;
+}
 
 
 @media only screen and (max-width: 425px){
@@ -56,8 +61,6 @@
     div#Testamonials{order: 1;}
     div#JoinButton{order:3;}
     div#ListofRoles{order: 2;}
-
-    
 }
 
 
@@ -109,6 +112,7 @@
     width: 100%;
     text-align: left;
 }
+
 .commonFeedSubmit{
     border: 1px dotted black;
     height: 25px;
@@ -124,27 +128,53 @@
     width: 100%;
 }
 
-
 .whiteText{
     color: white;
 }
 
 .featEvent{
     background: url(../img/event.png) no-repeat center;
-    padding: 40%;
+    padding: 15%;
+    margin: 5% 10% 1% 10%;
 }
+
+.eventLink{
+    text-align: center;
+    align-items: center;
+}
+
+
 .cCardPic{
-    background-image: url(../img/volunteer.jpg);
+    background: url(../img/volunteer.jpg) center;
 }
 
 .feedsPic{
-    background-image: url(../img/new_here.jpg);
+    background: url(../img/new_here.jpg) center;
 }
 
 .volunteer{
     background: url(../img/volunteer.jpg) no-repeat center fixed;
+    border-radius: 50%;
 }
 
 .intern{
     background: url(../img/new_here.jpg) no-repeat center fixed;
+    border-radius: 50%;
+}
+
+.other{
+    background-color: rgb(246, 87, 34);
+    color: white;
+    border-radius: 50%;
+}
+
+.self, .other{
+    padding: 5%;
+    font-family: 'catamaran';
+    font-weight: 700;
+}
+
+#message-input{
+    padding: 2%;
+    margin: 5%;
 }

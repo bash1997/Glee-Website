@@ -124,3 +124,41 @@ function pickTestimonials(obj, Testimonials){
     //obj.innerHTML += Testimonials[pick2]
     
 }
+
+//timer for testimonials changing
+
+function Counter(test, elem, delay){
+    let value = parseInt(elem.getAttribute("value"), 10)
+    let interval;
+
+    let list = test;
+
+    function updateDisplay(quote){
+        elem.innerHTML = quote;
+    }
+
+    function run(){
+        value += 1;
+        if(value == list.length) {
+            value = 0;
+        }
+
+        elem.setAttribute("value", value);
+        updateDisplay(list[value])
+    }
+
+    function start(){
+        interval = window.setInterval(run, delay)
+    }
+
+    this.start = start;
+}
+
+let elem = document.getElementById("VolTest");
+
+counter = new Counter(VolTestimonials, elem, 7000);
+counter.start();
+
+let elem2 = document.getElementById("InternTest");
+counter2 = new Counter(InternTestimonials, elem2, 7000);
+counter2.start();

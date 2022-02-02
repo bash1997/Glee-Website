@@ -355,6 +355,7 @@ section {
 
     #service-info {
         width: calc((100% / 3) * 2);
+        max-width: 911.55px;
     }
 
     #service-info .address-info,
@@ -390,6 +391,7 @@ section {
         height: 100%;
         margin-bottom: 0;
         min-height: unset;
+        max-width: 451.22px;
     }
 
     #app-graphic .button-orange {

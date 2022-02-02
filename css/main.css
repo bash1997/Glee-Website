@@ -214,6 +214,8 @@ section {
 
     #app-graphic.flex {
         align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
     }
 
     .app-graphic {
@@ -221,12 +223,14 @@ section {
         background-size: 100% auto;
         width: 60%;
         position: relative;
+        margin-bottom: 7%;
     }
 
     #app-graphic a {
         position: absolute;
         width: 30%;
         z-index: 1;
+        margin-bottom: 1rem;
     }
 
     .sermon-gallery .sermon-video {
@@ -339,6 +343,15 @@ section {
     #message-info .button-white {
         width: 70%;
     }
+    
+    #banner {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    #service-info.flex {
+        align-content: end;
+    }
 
     #service-info {
         width: calc((100% / 3) * 2);
@@ -351,6 +364,12 @@ section {
 
     .address-info {
         order: 1;
+    }
+    
+    .address-info.flex,
+    .direction.flex {
+        flex-direction: column;
+        justify-content: end;
     }
 
     .directions {
@@ -369,6 +388,8 @@ section {
     .app-graphic {
         width: 100%;
         height: 100%;
+        margin-bottom: 0;
+        min-height: unset;
     }
 
     #app-graphic .button-orange {

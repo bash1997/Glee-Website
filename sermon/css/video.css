@@ -91,8 +91,8 @@ video {
 /* GENERAL VIDEO */
 .sermon-video {
   width: 100%;
-  height: auto;
-  margin-bottom: 30px;
+/*   height: auto; */
+  margin-bottom: 2rem;
 }
 
 .sermon-video.flex {

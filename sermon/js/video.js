@@ -22,6 +22,305 @@ footerDivivder.style.height = (footerHeight - footerPadHeight)/1.5 + "px";
 //ORDERED FROM NEWEST TO OLDEST
 const video = [
   {
+    name: "Are You Solid?<span> | Vision Sunday</span>",
+    src: "./video/sermons/solid130.mp4",
+    series: "I'm Solid",
+    part: "1",
+    id: "solid1",
+    date: {
+      month: "January",
+      day: "30",
+      year: "2022"
+    },
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
+    description:
+      "Welcome to Glee Church! In this message we learn that all words have meaning. What we declare out of our mouth, God is getting ready to manifest.",
+    scripture: {
+      book: "",
+      chapter: "",
+      verse: {
+        start: "", 
+        end: ""
+      }
+    },
+    speaker: "Pastor Lorenzo A. Moseley"
+  },
+
+  {
+    name: "You Were Born To Win",
+    src: "./video/sermons/abundant123.mp4",
+    series: "Abundantly Broken Down",
+    part: "2",
+    id: "abundant2",
+    date: {
+      month: "January",
+      day: "23",
+      year: "2022"
+    },
+    playlist: ["All Videos", "Pastor Phyliseccea Owens"],
+    description:
+      "Welcome to Glee Church! In this message we learn that we were born to be victorious. As long as we surrender to God he will continuously give us unspeakable favors, joy, grace, and mercy.",
+    scripture: {
+      book: "John",
+      chapter: "15",
+      verse: {
+        start: "1", 
+        end: "4"
+      }
+    },
+    speaker: "Pastor Phyliseccea Owens"
+  },
+
+  {
+    name: "Living An Anbudant Life",
+    src: "./video/sermons/abundant117.mp4",
+    series: "Abundantly Broken Down",
+    part: "1",
+    id: "abundant1",
+    date: {
+      month: "January",
+      day: "17",
+      year: "2022"
+    },
+    playlist: ["All Videos", "Pastor Phyliseccea Owens"],
+    description:
+      "In this message we learn how to live an abundant life. We must makes sacrifices so the Lord can fill our lives with peace, love , mercy, and grace.",
+    scripture: {
+      book: "John",
+      chapter: "10",
+      verse: {
+        start: "7", 
+        end: "10"
+      }
+    },
+    speaker: "Pastor Phyliseccea Owens"
+  },
+
+  {
+    name: "God is Saving While You are Praising",
+    src: "./video/sermons/saving109.mp4",
+    series: "God is Saving",
+    part: "1",
+    id: "saving1",
+    date: {
+      month: "January",
+      day: "9",
+      year: "2022"
+    },
+    playlist: ["All Videos", "Pastor Courtney Thorpe"],
+    description:
+      "Be part of something great. You belong here! At Glee Church, our mission is to share the love of Jesus Christ and to reach the unchurched.",
+    scripture: {
+      book: "Isaiah",
+      chapter: "61",
+      verse: {
+        start: "3"
+      }
+    },
+    speaker: "Pastor Courtney Thorpe"
+  },
+
+  {
+    name: "Living in the Now<span> | Live By Faith</span>",
+    src: "./video/sermons/next1010.mp4",
+    series: "Next Is Now",
+    part: "2",
+    id: "next2",
+    date: {
+      month: "October",
+      day: "10",
+      year: "2021"
+    },
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley", "Rebuild", "Faith", "New Beginning"],
+    description:
+      "Welcome to Glee Church! In Part 2 of our series Next Is Now, we learn to that we should start living in the now. We need to let go of thing of the past and trust that God has a plan for us.",
+    scripture: {
+      book: "Joshua",
+      chapter: "1",
+      verse: {
+        start: "1", 
+        end: ""
+      }
+    },
+    speaker: "Pastor Lorenzo A. Moseley"
+  },
+
+  {
+    name: "What's Next Is Now",
+    src: "./video/sermons/next103.mp4",
+    series: "Next Is Now",
+    part: "1",
+    id: "next1",
+    date: {
+      month: "October",
+      day: "3",
+      year: "2021"
+    },
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley", "Rebuild"],
+    description:
+      "Welcome to Glee Church! In this message we start a new series, Next Is Now.",
+    scripture: {
+      book: "Nehemiah",
+      chapter: "6",
+      verse: {
+        start: "2", 
+        end: ""
+      }
+    },
+    speaker: "Pastor Lorenzo A. Moseley"
+  },
+
+  {
+    name: "There Will Be Results",
+    src: "./video/sermons/jesus926.mp4",
+    series: "Let Jesus In",
+    part: "1",
+    id: "letJesus1",
+    date: {
+      month: "September",
+      day: "26",
+      year: "2021"
+    },
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
+    description:
+    "Welcome to Glee Church! In this message we learn about how God yields results in the time of need. It is up to us to let him in.",
+    scripture: {
+      book: "Luke",
+      chapter: "5",
+      verse: {
+        start: "1", 
+        end: ""
+      }
+    },
+    speaker: "Pastor Lorenzo A. Moseley"
+  },
+
+  {
+    name: "Get Ready For Your Harvest<span> | Transitions Are Happening </span>",
+    src: "./video/sermons/transitions919.mp4",
+    series: "Transitions",
+    part: "1",
+    id: "transitions1",
+    date: {
+      month: "September",
+      day: "19",
+      year: "2021"
+    },
+    playlist: ["All Videos", "Pastor Phyliseccea Owens"],
+    description:
+      "Welcome to Glee Church! Enjoy a special word from guest speaker, Phyliscecea Owens. Watch as Phyliscecea delves into the various transitions we may go through, and how we can prepare for our harvest.",
+    scripture: {
+      book: "Mark",
+      chapter: "8",
+      verse: {
+        start: "27", 
+        end: "38"
+      }
+    },
+    speaker: "Pastor Phyliseccea Owens"
+  },
+
+  {
+    name: "How to Find God<span> | He Occupies All of Us </span>",
+    src: "./video/sermons/cheeks912.mp4",
+    series: "Dr. Robert F. Cheeks Jr.",
+    part: "1",
+    id: "cheeks1",
+    date: {
+      month: "September",
+      day: "12",
+      year: "2021"
+    },
+    playlist: [ "All Videos", "Guest Pastors" ],
+    description:
+      "Welcome to Glee Church! Enjoy a special word from guest speaker, Dr. Robert F. Cheeks Jr.",
+    scripture: {
+      book: "",
+      chapter: "",
+      verse: {
+        start: "", 
+        end: ""
+      }
+    },
+    speaker: "Dr. Robert F. Cheeks Jr."
+  },
+
+  {
+    name: "His Love is Unconditional<span> | Walk by Faith </span>",
+    src: "./video/sermons/part830.mp4",
+    series: "Your Part Matters",
+    part: "3",
+    id: "yourPart3",
+    date: {
+      month: "August",
+      day: "30",
+      year: "2021"
+    },
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley", "Faith"],
+    description:
+      "In this message  we recap the past two series, Neighborhood Watch and Your Part Matters. We learn that we must love people unconditionally. We must lead by example. We were created to multiply. Don't wait to bear fruit, trust in God.",
+    scripture: {
+      book: "",
+      chapter: "",
+      verse: {
+        start: "", 
+        end: ""
+      }
+    },
+    speaker: "Pastor Lorenzo A. Moseley"
+  },
+  
+  {
+    name: "You Are Fully Loaded with Potential<span> | Do Your Part </span>",
+    src: "./video/sermons/part815.mp4",
+    series: "Your Part Matters",
+    part: "2",
+    id: "yourPart2",
+    date: {
+      month: "August",
+      day: "15",
+      year: "2021"
+    },
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
+    description:
+      "In part 2 of our series, Your Part Matters , we learn that we are the people that should yield results. We were created to multiply. Don't wait to bear fruit, trust in God.",
+    scripture: {
+      book: "",
+      chapter: "",
+      verse: {
+        start: "", 
+        end: ""
+      }
+    },
+    speaker: "Pastor Lorenzo A. Moseley"
+  },
+  
+  {
+    name: "Are You Doing Enough?",
+    src: "./video/sermons/part88.mp4",
+    series: "Your Part Matters",
+    part: "1",
+    id: "yourPart1",
+    date: {
+      month: "August",
+      day: "8",
+      year: "2021"
+    },
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
+    description:
+      "In part 1 of our series, Your Part Matters , we learn that in order to grow with God we must do our part. We must ask ourselves are we doing enough.",
+    scripture: {
+      book: "",
+      chapter: "",
+      verse: {
+        start: "", 
+        end: ""
+      }
+    },
+    speaker: "Pastor Lorenzo A. Moseley"
+  },
+
+  {
     name: "Don't Walk By Your Blessings<span> | Hidden Blessings</span>",
     src: "./video/sermons/watch725.mp4",
     series: "Neighborhood Watch",
@@ -32,7 +331,7 @@ const video = [
       day: "25",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In part 2 of our series, neighborhood watch , we learn that many times we walk right by our blessings. We must sometimes step out of our comfort zone to reach the blessing that God has for us.",
     scripture: {
@@ -57,7 +356,7 @@ const video = [
       day: "18",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In part 1 of our series, neighborhood watch , we learn that we must expand our community and love our neighbors.",
     scripture: {
@@ -82,7 +381,7 @@ const video = [
       day: "11",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In the finale of our series, Baggage , we learn about being intentional. We learn that we must trust God and prepare for our season!",
     scripture: {
@@ -107,7 +406,7 @@ const video = [
       day: "4",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In our series, Baggage , we learn about the various ways to stop carrying baggage. We learn to trust God and his Process.",
     scripture: [
@@ -142,7 +441,7 @@ const video = [
       day: "20",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In Part 3 of our series, Our Heart For The House , we learn about the various ways we can worship the Lord.",
     scripture: {
@@ -167,7 +466,7 @@ const video = [
       day: "13",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In Part 2 of our series, Our Heart For The House , we talk about relationships and loving all of those around us.",
     scripture: {
@@ -192,7 +491,7 @@ const video = [
       day: "6",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley", "Faith", "Serving"],
     description:
       "In Part 1 of our series, Our Heart For The House , we learn about the beauty in serving.",
     scripture: {
@@ -217,7 +516,7 @@ const video = [
       day: "30",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In Week 2 of our series, Limitations, we learned about how pride can be a hindrance in our lives. We should put our pride aside and come humbly before God.",
     scripture: {
@@ -242,7 +541,7 @@ const video = [
       day: "23",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley", "Faith"],
     description:
       "In Week 1 of our series, Limitations, we learned about how we must not let fear block our blessings. We must have faith over fear.",
     scripture: {
@@ -267,7 +566,7 @@ const video = [
       day: "16",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In the final part of our series, The Heart, we continue to learn about how to be generous and giving of ourselves.",
     scripture: {
@@ -292,7 +591,7 @@ const video = [
       day: "9",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description: "In this message, we learn about how to walk in our destiny.",
     scripture: {
       book: "",
@@ -316,7 +615,7 @@ const video = [
       day: "2",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "Be part of something great. You belong here! At Glee Church, our mission is to share the love of Jesus Christ and to reach the unchurched.",
     scripture: {
@@ -341,7 +640,7 @@ const video = [
       day: "25",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In Part 2 of our series, The Heart, we continue to learn about how to be generous and giving of ourselves.",
     scripture: {
@@ -366,7 +665,7 @@ const video = [
       day: "18",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In Part 1 of our series, The Heart, we learn that there's beauty in giving.",
     scripture: {
@@ -391,7 +690,7 @@ const video = [
       day: "11",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "Be part of something great. You belong here! At Glee Church, our mission is to share the love of Jesus Christ and to reach the unchurched.",
     scripture: {
@@ -416,7 +715,7 @@ const video = [
       day: "4",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In this message we learn about why Jesus is so special. There is none like him.",
     scripture: {
@@ -441,7 +740,7 @@ const video = [
       day: "28",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "Be part of something great. You belong here! At Glee Church, our mission is to share the love of Jesus Christ and to reach the unchurched.",
     scripture: {
@@ -467,7 +766,7 @@ const video = [
   //     day: "21",
   //     year: "2021"
   //   },
-  //   playlist: "All Videos",
+  //   playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
   //   description:
   //     "In Part 3 of our series, The Mind, we learned about how our actions can block our blessings.",
   //   scripture: {
@@ -492,7 +791,7 @@ const video = [
       day: "14",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "In Part 2 of our series, The Mind, we learn about self esteem.",
     scripture: {
@@ -517,7 +816,7 @@ const video = [
       day: "21",
       year: "2021"
     },
-    playlist: "All Videos",
+    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
     description:
       "Be part of something great. You belong here! At Glee Church, our mission is to share the love of Jesus Christ and to reach the unchurched.",
     scripture: {
@@ -542,6 +841,24 @@ const poster = [
     id: "allTab"
   },
   {
+    series: "I'm Solid",
+    img: "./img/solid.png",
+    id: "solidTab"
+  },
+  {
+    series: "Abundantly Broken Down",
+    img: "./img/abundant.png",
+    id: "abundantTab"
+  },
+  {
+    series: "God is Saving",
+    img: "./img/saving.png",
+    id: "savingTab"
+  },
+  //don't be a grinch
+  //why them
+  //five years from now
+  {
     series: "Habits",
     img: "./img/habits.png",
     id: "habitsTab"
@@ -552,14 +869,14 @@ const poster = [
     id: "nextTab"
   },
   {
-    series: "Neighborhood Watch",
-    img: "./img/neighborhood.png",
-    id: "neighborhoodTab"
-  },
-  {
     series: "Your Part Matters",
     img: "./img/yourPart.png",
     id: "yourPartTab"
+  },
+  {
+    series: "Neighborhood Watch",
+    img: "./img/neighborhood.png",
+    id: "neighborhoodTab"
   },
   {
     series: "Baggage",
@@ -629,11 +946,37 @@ const createDiv = (addClassName, elementId, src, nombre, series, part, selection
   divVideo.setAttribute("onclick", `playVideo("${elementId}")`);
   divVideo.poster = poster[0].img; //for sermons without a major series
     for (let i = 0; i < poster.length; i++) {
-      if (poster[i].series === series) {
+      if (poster[i].series.toLowerCase() === series.toLowerCase()) {
         divVideo.poster = poster[i].img;
       }
     }
   divVideo.src = src;
+  sermonDiv.append(divVideo);
+
+  let inDiv = document.createElement("DIV");
+  inDiv.classList.add("video-info", "flex");
+  inDiv.setAttribute("onclick", `playVideo("${elementId}")`);
+  inDiv.innerHTML = `<h6>${nombre}</h6><p>${series} pt. ${part}</p>`;
+
+  sermonDiv.append(inDiv);
+  selection.append(sermonDiv); //ADDS TO SELECTION
+}
+
+//CREATE DIV WITH IMG
+const createImg = (addClassName, elementId, src, nombre, series, part, selection) => {
+  //CREATES CONTAINER DIV WITH VIDEO & VIDEO INFO DIV
+  let sermonDiv = document.createElement("DIV");
+  sermonDiv.classList.add(addClassName, "flex");
+  sermonDiv.setAttribute("id", elementId);
+
+  let divVideo = document.createElement("IMG");
+  divVideo.setAttribute("onclick", `playVideo("${elementId}")`);
+  divVideo.src = poster[0].img; //for sermons without a major series
+    for (let i = 0; i < poster.length; i++) {
+      if (poster[i].series.toLowerCase() === series.toLowerCase()) {
+        divVideo.src = poster[i].img;
+      }
+    }
   sermonDiv.append(divVideo);
 
   let inDiv = document.createElement("DIV");
@@ -677,7 +1020,7 @@ const displayMostRecent = function() {
     let part = element["part"];
     let id = "recent" + element["id"];
     let addClassName = "sermon-video";
-    createDiv(addClassName, id, src, nombre, series, part, mostRecent);
+    createImg(addClassName, id, src, nombre, series, part, mostRecent);
   }
 }
 
@@ -694,7 +1037,7 @@ const displayPop = function() {
     //CHECK YOUTUBE FOR MOST POPULAR VIDEOS
     if (series == "The Heart") {
       let addClassName = "sermon-video";
-      createDiv(addClassName, id, src, nombre, series, part, mostPop);
+      createImg(addClassName, id, src, nombre, series, part, mostPop);
     }
   }
 }
@@ -719,7 +1062,7 @@ const displaySuggestion = (serie) => {
       let part = element["part"];
       let id = element["id"];
       let addClassName = "sermon-video";
-      createDiv(addClassName, id, src, nombre, series, part, mostRecent);
+      createImg(addClassName, id, src, nombre, series, part, mostRecent);
     }
   }
 }
@@ -767,7 +1110,7 @@ const displayBySeries = function(serie) {
         let addClassName = "sermon-video";
 
         if (series == group) {
-          createDiv(addClassName, id, src, nombre, series, part, seriesDiv);
+          createImg(addClassName, id, src, nombre, series, part, seriesDiv);
         }
       }
       all.append(seriesDiv);
@@ -785,7 +1128,7 @@ const displayBySeries = function(serie) {
         let part = element["part"];
         let id = element["id"];
         let addClassName = "sermon-video";
-        createDiv(addClassName, id, src, nombre, series, part, all);
+        createImg(addClassName, id, src, nombre, series, part, all);
       }
     }
   }
@@ -823,7 +1166,7 @@ const displayAll = function() {
     let part = element["part"];
     let id = element["id"];
     let addClassName = "sermon-video";
-    createDiv(addClassName, id, src, nombre, series, part, all);
+    createImg(addClassName, id, src, nombre, series, part, all);
   }
 }
 

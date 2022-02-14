@@ -15,7 +15,8 @@ main section h3 {
 }
 
 /* ALL SETTING STYLES */
-video {
+video,
+main img {
   width: 100%;
   height: auto;
 }
@@ -91,15 +92,15 @@ video {
 /* GENERAL VIDEO */
 .sermon-video {
   width: 100%;
-/*   height: auto; */
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
 }
 
 .sermon-video.flex {
   justify-content: space-around;
 }
 
-.sermon-video video {
+/* .sermon-video video */
+.sermon-video img  {
   border-radius: 15px;
   width: 40%;
   height: fit-content;
@@ -153,7 +154,8 @@ video {
     margin-bottom: unset;
   }
 
-  .sermon-video video {
+  /* .sermon-video video { */
+    .sermon-video img {
     width: 75%;
     margin-bottom: 20px;
   }
@@ -213,7 +215,8 @@ video {
     justify-content: space-around;
   }
 
-  #recent video {
+  /* #recent video { */
+    #recent img {
     width: 40%;
     margin: 0;
   }
@@ -221,6 +224,17 @@ video {
   #recent .video-info {
     width: 50%;
   }
+
+  /* BY SERIES TAB */
+  #series::-webkit-scrollbar {
+    display: unset;
+  }
+
+  #series::-webkit-scrollbar-thumb {
+    background: #55555585;
+    border-radius: 15px;
+  }
+
 
 }
 
@@ -237,7 +251,8 @@ video {
     align-items: center;
   }
 
-  .sermon-video video {
+  /* .sermon-video video { */
+    .sermon-video img {
     width: 80%;
     margin-bottom: 15px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
@@ -261,7 +276,8 @@ video {
     flex-flow: row wrap;
   }
 
-  #most-recent video {
+  /* #most-recent video { */
+    #most-recent img {
     box-shadow: none;
   }
 
@@ -270,15 +286,6 @@ video {
   }
 
   /* BY SERIES TAB */
-  #series::-webkit-scrollbar {
-    display: unset;
-  }
-
-  #series::-webkit-scrollbar-thumb {
-    background: #55555585;
-    border-radius: 15px;
-  }
-
   #series .tab {
     height: 30vh;
   }

@@ -23,7 +23,7 @@ footerDivivder.style.height = (footerHeight - footerPadHeight)/1.5 + "px";
 const video = [
   {
     name: "Are You Solid?<span> | Vision Sunday</span>",
-    src: "./video/sermons/solid130.mp4",
+    src: "./video/placeholder.mp4",
     series: "I'm Solid",
     part: "1",
     id: "solid1",
@@ -48,7 +48,7 @@ const video = [
 
   {
     name: "You Were Born To Win",
-    src: "./video/sermons/abundant123.mp4",
+    src: "./video/placeholder.mp4",
     series: "Abundantly Broken Down",
     part: "2",
     id: "abundant2",
@@ -73,7 +73,7 @@ const video = [
 
   {
     name: "Living An Anbudant Life",
-    src: "./video/sermons/abundant117.mp4",
+    src: "./video/placeholder.mp4",
     series: "Abundantly Broken Down",
     part: "1",
     id: "abundant1",
@@ -98,7 +98,7 @@ const video = [
 
   {
     name: "God is Saving While You are Praising",
-    src: "./video/sermons/saving109.mp4",
+    src: "./video/placeholder.mp4",
     series: "God is Saving",
     part: "1",
     id: "saving1",
@@ -122,7 +122,7 @@ const video = [
 
   {
     name: "Living in the Now<span> | Live By Faith</span>",
-    src: "./video/sermons/next1010.mp4",
+    src: "./video/placeholder.mp4",
     series: "Next Is Now",
     part: "2",
     id: "next2",
@@ -147,7 +147,7 @@ const video = [
 
   {
     name: "What's Next Is Now",
-    src: "./video/sermons/next103.mp4",
+    src: "./video/placeholder.mp4",
     series: "Next Is Now",
     part: "1",
     id: "next1",
@@ -172,7 +172,7 @@ const video = [
 
   {
     name: "There Will Be Results",
-    src: "./video/sermons/jesus926.mp4",
+    src: "./video/placeholder.mp4",
     series: "Let Jesus In",
     part: "1",
     id: "letJesus1",
@@ -197,7 +197,7 @@ const video = [
 
   {
     name: "Get Ready For Your Harvest<span> | Transitions Are Happening </span>",
-    src: "./video/sermons/transitions919.mp4",
+    src: "./video/placeholder.mp4",
     series: "Transitions",
     part: "1",
     id: "transitions1",
@@ -222,7 +222,7 @@ const video = [
 
   {
     name: "How to Find God<span> | He Occupies All of Us </span>",
-    src: "./video/sermons/cheeks912.mp4",
+    src: "./video/placeholder.mp4",
     series: "Dr. Robert F. Cheeks Jr.",
     part: "1",
     id: "cheeks1",
@@ -247,7 +247,7 @@ const video = [
 
   {
     name: "His Love is Unconditional<span> | Walk by Faith </span>",
-    src: "./video/sermons/part830.mp4",
+    src: "./video/placeholder.mp4",
     series: "Your Part Matters",
     part: "3",
     id: "yourPart3",
@@ -272,7 +272,7 @@ const video = [
   
   {
     name: "You Are Fully Loaded with Potential<span> | Do Your Part </span>",
-    src: "./video/sermons/part815.mp4",
+    src: "./video/placeholder.mp4",
     series: "Your Part Matters",
     part: "2",
     id: "yourPart2",
@@ -297,7 +297,7 @@ const video = [
   
   {
     name: "Are You Doing Enough?",
-    src: "./video/sermons/part88.mp4",
+    src: "./video/placeholder.mp4",
     series: "Your Part Matters",
     part: "1",
     id: "yourPart1",
@@ -322,7 +322,7 @@ const video = [
 
   {
     name: "Don't Walk By Your Blessings<span> | Hidden Blessings</span>",
-    src: "./video/sermons/watch725.mp4",
+    src: "./video/placeholder.mp4",
     series: "Neighborhood Watch",
     part: "2",
     id: "watch2",
@@ -347,7 +347,7 @@ const video = [
   
   {
     name: "Who Is Your Neighbor?<span> | Love Your Neighbor As Yourself</span>",
-    src: "./video/sermons/watch718.mp4",
+    src: "./video/placeholder.mp4",
     series: "Neighborhood Watch",
     part: "1",
     id: "watch1",
@@ -372,7 +372,7 @@ const video = [
   
   {
     name: "This is Your Season!<span> | Be Intentional</span>",
-    src: "./video/sermons/baggage711.mp4",
+    src: "./video/placeholder.mp4",
     series: "Baggage",
     part: "3",
     id: "bag3",
@@ -397,7 +397,7 @@ const video = [
 
   {
     name: "The Door is Open<span> | Trust God's Process</span>",
-    src: "./video/sermons/baggage74.mp4",
+    src: "./video/placeholder.mp4",
     series: "Baggage",
     part: "2",
     id: "bag2",
@@ -432,7 +432,7 @@ const video = [
   //JUNE 27TH IS MISSING
   {
     name: "How Should We Worship?",
-    src: "./video/sermons/worship620.mp4",
+    src: "./video/placeholder.mp4",
     series: "Our Heart For The House",
     part: "3",
     id: "home3",
@@ -457,7 +457,7 @@ const video = [
 
   {
     name: "You Can't Cancel What You Didn't Create",
-    src: "./video/sermons/relationships613.mp4",
+    src: "./video/placeholder.mp4",
     series: "Our Heart For The House",
     part: "2",
     id: "home2",
@@ -482,7 +482,7 @@ const video = [
 
   {
     name: "Faithfulness In Serving<span> | Service is Mindset</span>",
-    src: "./video/sermons/service66.mp4",
+    src: "./video/placeholder.mp4",
     series: "Our Heart For The House",
     part: "1",
     id: "home1",
@@ -507,7 +507,7 @@ const video = [
 
   {
     name: "Pride Is A Dangerous Thing",
-    src: "./video/sermons/limitations530.mp4",
+    src: "./video/placeholder.mp4",
     series: "Limitations",
     part: "2",
     id: "limit2",
@@ -532,7 +532,7 @@ const video = [
 
   {
     name: "It Stops Here",
-    src: "./video/sermons/limitations523.mp4",
+    src: "./video/placeholder.mp4",
     series: "Limitations",
     part: "1",
     id: "limit1",
@@ -557,7 +557,7 @@ const video = [
 
   {
     name: "God Wants You",
-    src: "./video/sermons/heart516.mp4",
+    src: "./video/placeholder.mp4",
     series: "The Heart",
     part: "3",
     id: "heart3",
@@ -582,7 +582,7 @@ const video = [
 
   {
     name: "Don't Walk Away From Your Destiny",
-    src: "./video/sermons/destiny59.mp4",
+    src: "./video/placeholder.mp4",
     series: "Destiny",
     part: "1",
     id: "destiny1",
@@ -606,7 +606,7 @@ const video = [
 
   {
     name: "Stop Hiding Your Struggles",
-    src: "./video/sermons/mind52.mp4",
+    src: "./video/placeholder.mp4",
     series: "The Mind",
     part: "4",
     id: "mind4",
@@ -631,7 +631,7 @@ const video = [
 
   {
     name: "Living a Generous Life",
-    src: "./video/sermons/heart425.mp4",
+    src: "./video/placeholder.mp4",
     series: "The Heart",
     part: "2",
     id: "heart2",
@@ -656,7 +656,7 @@ const video = [
 
   {
     name: "There's Beauty in Giving",
-    src:"./video/sermons/heart418.mp4",
+    src:"./video/placeholder.mp4",
     series: "The Heart",
     part: "1",
     id: "heart1",
@@ -681,7 +681,7 @@ const video = [
 
   {
     name: "A Life Without Meaning",
-    src:"./video/sermons/enviroment411.mp4",
+    src:"./video/placeholder.mp4",
     series: "Your Environment Matters",
     part: "1",
     id: "matters1",
@@ -706,7 +706,7 @@ const video = [
 
   {
     name: "What's So Special About Him",
-    src:"./video/sermons/jesus44.mp4",
+    src:"./video/placeholder.mp4",
     series: "Why Jesus?",
     part: "1",
     id: "jesus1",
@@ -731,7 +731,7 @@ const video = [
 
   {
     name: "Passion",
-    src: "./video/sermons/passion328.mp4",
+    src: "./video/placeholder.mp4",
     series: "Passion",
     part: "1",
     id: "passion1",
@@ -782,7 +782,7 @@ const video = [
 
   {
     name: "Self Esteem",
-    src: "./video/sermons/mind314.mp4",
+    src: "./video/placeholder.mp4",
     series: "The Mind",
     part: "2",
     id: "mind2",
@@ -807,7 +807,7 @@ const video = [
   //MARCH 7 IS MISSING
   {
     name: "Disconnected",
-    src: "./video/sermons/mind221.mp4",
+    src: "./video/placeholder.mp4",
     series: "The Mind",
     part: "1",
     id: "mind1",

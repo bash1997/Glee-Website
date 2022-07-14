@@ -840,21 +840,21 @@ const poster = [
     img: "./img/sermons.png",
     id: "allTab"
   },
-  {
-    series: "I'm Solid",
-    img: "./img/solid.png",
-    id: "solidTab"
-  },
-  {
-    series: "Abundantly Broken Down",
-    img: "./img/abundant.png",
-    id: "abundantTab"
-  },
-  {
-    series: "God is Saving",
-    img: "./img/saving.png",
-    id: "savingTab"
-  },
+//  {
+//     series: "I'm Solid",
+//     img: "./img/solid.png",
+//     id: "solidTab"
+//   },
+//   {
+//     series: "Abundantly Broken Down",
+//     img: "./img/abundant.png",
+//     id: "abundantTab"
+//   },
+//   {
+//     series: "God is Saving",
+//     img: "./img/saving.png",
+//     id: "savingTab"
+//   },
   //don't be a grinch
   //why them
   //five years from now

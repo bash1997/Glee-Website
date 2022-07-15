@@ -103,7 +103,7 @@ main img {
 .sermon-video img  {
   border-radius: 15px;
   width: 40%;
-  height: fit-content;
+  height: auto;
 }
 
 .sermon-video .video-info {

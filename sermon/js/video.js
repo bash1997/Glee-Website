@@ -915,12 +915,11 @@ const all = document.querySelector("#all");
 //PLAY VIDEO
 //ONCLICK CHANGES TO FEATURED VIDEO
 const playVideo = (id) => {
-  const idSrc = document.querySelector(`#${id} VIDEO`).src;
+  const idName = document.querySelector(`#${id}`).id;
   for (let i = 0; i < video.length; i++) {
-    let src = video[i]["src"];
-    webSrc = src.replace('.', '');
+    let id = video[i]["id"];
     
-    if (idSrc.includes(webSrc)){
+    if (idName == id){
       document.querySelector("#feat DIV").remove();
       displayFeat(video[i]);
       if(i != 0) {

@@ -21,80 +21,80 @@ footerDivivder.style.height = (footerHeight - footerPadHeight)/1.5 + "px";
 //VIDEO OBJECT
 //ORDERED FROM NEWEST TO OLDEST
 const video = [
-  {
-    name: "Are You Solid?<span> | Vision Sunday</span>",
-    src: "./video/placeholder.mp4",
-    series: "I'm Solid",
-    part: "1",
-    id: "solid1",
-    date: {
-      month: "January",
-      day: "30",
-      year: "2022"
-    },
-    playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
-    description:
-      "Welcome to Glee Church! In this message we learn that all words have meaning. What we declare out of our mouth, God is getting ready to manifest.",
-    scripture: {
-      book: "",
-      chapter: "",
-      verse: {
-        start: "", 
-        end: ""
-      }
-    },
-    speaker: "Pastor Lorenzo A. Moseley"
-  },
+//   {
+//     name: "Are You Solid?<span> | Vision Sunday</span>",
+//     src: "./video/placeholder.mp4",
+//     series: "I'm Solid",
+//     part: "1",
+//     id: "solid1",
+//     date: {
+//       month: "January",
+//       day: "30",
+//       year: "2022"
+//     },
+//     playlist: ["All Videos", "Pastor Lorenzo A. Moseley"],
+//     description:
+//       "Welcome to Glee Church! In this message we learn that all words have meaning. What we declare out of our mouth, God is getting ready to manifest.",
+//     scripture: {
+//       book: "",
+//       chapter: "",
+//       verse: {
+//         start: "", 
+//         end: ""
+//       }
+//     },
+//     speaker: "Pastor Lorenzo A. Moseley"
+//   },
 
-  {
-    name: "You Were Born To Win",
-    src: "./video/placeholder.mp4",
-    series: "Abundantly Broken Down",
-    part: "2",
-    id: "abundant2",
-    date: {
-      month: "January",
-      day: "23",
-      year: "2022"
-    },
-    playlist: ["All Videos", "Pastor Phyliseccea Owens"],
-    description:
-      "Welcome to Glee Church! In this message we learn that we were born to be victorious. As long as we surrender to God he will continuously give us unspeakable favors, joy, grace, and mercy.",
-    scripture: {
-      book: "John",
-      chapter: "15",
-      verse: {
-        start: "1", 
-        end: "4"
-      }
-    },
-    speaker: "Pastor Phyliseccea Owens"
-  },
+//   {
+//     name: "You Were Born To Win",
+//     src: "./video/placeholder.mp4",
+//     series: "Abundantly Broken Down",
+//     part: "2",
+//     id: "abundant2",
+//     date: {
+//       month: "January",
+//       day: "23",
+//       year: "2022"
+//     },
+//     playlist: ["All Videos", "Pastor Phyliseccea Owens"],
+//     description:
+//       "Welcome to Glee Church! In this message we learn that we were born to be victorious. As long as we surrender to God he will continuously give us unspeakable favors, joy, grace, and mercy.",
+//     scripture: {
+//       book: "John",
+//       chapter: "15",
+//       verse: {
+//         start: "1", 
+//         end: "4"
+//       }
+//     },
+//     speaker: "Pastor Phyliseccea Owens"
+//   },
 
-  {
-    name: "Living An Anbudant Life",
-    src: "./video/placeholder.mp4",
-    series: "Abundantly Broken Down",
-    part: "1",
-    id: "abundant1",
-    date: {
-      month: "January",
-      day: "17",
-      year: "2022"
-    },
-    playlist: ["All Videos", "Pastor Phyliseccea Owens"],
-    description:
-      "In this message we learn how to live an abundant life. We must makes sacrifices so the Lord can fill our lives with peace, love , mercy, and grace.",
-    scripture: {
-      book: "John",
-      chapter: "10",
-      verse: {
-        start: "7", 
-        end: "10"
-      }
-    },
-    speaker: "Pastor Phyliseccea Owens"
-  },
+//   {
+//     name: "Living An Anbudant Life",
+//     src: "./video/placeholder.mp4",
+//     series: "Abundantly Broken Down",
+//     part: "1",
+//     id: "abundant1",
+//     date: {
+//       month: "January",
+//       day: "17",
+//       year: "2022"
+//     },
+//     playlist: ["All Videos", "Pastor Phyliseccea Owens"],
+//     description:
+//       "In this message we learn how to live an abundant life. We must makes sacrifices so the Lord can fill our lives with peace, love , mercy, and grace.",
+//     scripture: {
+//       book: "John",
+//       chapter: "10",
+//       verse: {
+//         start: "7", 
+//         end: "10"
+//       }
+//     },
+//     speaker: "Pastor Phyliseccea Owens"
+//   },
 
   {
     name: "God is Saving While You are Praising",

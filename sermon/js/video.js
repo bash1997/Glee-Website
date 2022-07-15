@@ -916,6 +916,7 @@ const all = document.querySelector("#all");
 //ONCLICK CHANGES TO FEATURED VIDEO
 const playVideo = (id) => {
   const idName = document.querySelector(`#${id}`).id;
+  console.log(idName);
   for (let i = 0; i < video.length; i++) {
     let id = video[i]["id"];
     

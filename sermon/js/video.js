@@ -916,11 +916,10 @@ const all = document.querySelector("#all");
 //ONCLICK CHANGES TO FEATURED VIDEO
 const playVideo = (id) => {
   const idName = document.querySelector(`#${id}`).id;
-  console.log(idName);
   for (let i = 0; i < video.length; i++) {
     let id = video[i]["id"];
     
-    if (idName == id){
+    if (idName.includes(id)){
       document.querySelector("#feat DIV").remove();
       displayFeat(video[i]);
       if(i != 0) {
